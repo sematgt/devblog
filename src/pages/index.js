@@ -5,7 +5,6 @@ import { Helmet } from "react-helmet"
 import config from "../../data/SiteConfig"
 
 export default function Index({data}) {
-    console.log(data.allMarkdownRemark)
     const { edges: posts } = data.allMarkdownRemark
     return (
         <Layout>
@@ -33,22 +32,21 @@ export default function Index({data}) {
         }
 
 export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          excerpt(pruneLength: 250)
-          id
-          frontmatter {
-            title
-            date(formatString: "YYYY-MM-DD")
-            path
-            subtitle
-            readtime
-            tags
-          }
+query IndexQuery {
+  allMarkdownRemark(sort: {order: DESC, fields: frontmatter___date}, filter: {frontmatter: {template: {eq: "blogpost"}}}) {
+    edges {
+      node {
+        frontmatter {
+          title
+          tags
+          subtitle
+          readtime
+          path
+          date(formatString: "YYYY-MM-DD")
         }
+      id
       }
     }
   }
+}
 `

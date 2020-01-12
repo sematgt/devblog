@@ -5,7 +5,7 @@ import config from "../../data/SiteConfig"
 
 export default ({children}) => (
     <div className="layout">
-        {/* <Navigation links="" */}
+        <Navigation pages={config.menuLinks} />
         {children}
     </div>
 )

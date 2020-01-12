@@ -1,9 +1,9 @@
 ---
-path: "/first-article"
-date: 2020-01-05
-title: "First publication. To-do plan on learning things"
+path: "/2nd-article"
+date: 2020-01-06
+title: "2nd. To-do plan on learning things"
 subtitle: "Here we go"
-tags: "Blog"
+tags: "Python"
 readtime: 12
 template: blogpost
 ---
