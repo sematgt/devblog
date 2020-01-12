@@ -40,3 +40,4 @@ const config = {
     // backgroundColor: '#ffffff',
   }
   
+module.exports = config
