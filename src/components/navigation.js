@@ -3,7 +3,7 @@ import { StaticQuery, Link } from "gatsby"
 
 export default (props, {children}) => (
     <div className="navigation-wrapper"> 
-    <div className="hiwords">Hello, I`m Simon, full-stack software engineer <span role="img">⛏</span>, working on open-source and writing about my vision to web-development.<span role="img">🧾</span></div>
+    <div className="hiwords">Hello, I`m Simon, full-stack software engineer <span role="img" aria-label="wip">⛏️</span>, working on open-source and writing about my vision to web-development.<span role="img" aria-label="paper">🧾</span></div>
     <StaticQuery
         query={graphql`
         query TagsList {
@@ -24,8 +24,14 @@ export default (props, {children}) => (
     />
     <div className="navigation">
         {props.pages.map(page => (
-            <p key={page.name}>{page.name}</p>
+            <div className="pageLink">
+                <Link to={page.link} key={page.name}>{page.name}</Link>
+            </div>
         ))}
+    </div>
+    <div className="newsletter">
+        You can get materials directly from me by email. <span role="img" aria-label="mailbox">📬</span> 
+        I`ll never send you a spam. <span role="img" aria-label="letter">📨</span> Subscribe to newsletter.
     </div>
     <div className="content">
         {children}
@@ -33,10 +39,3 @@ export default (props, {children}) => (
     </div>
 )
 
-
-// export default (props) => (
-//     <div>
-//     {console.log(props)}
-
-//     </div>
-// )

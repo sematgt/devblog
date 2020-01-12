@@ -1,6 +1,6 @@
 ---
 title: "About me"
-path: "/about-me"
+path: "/aboutme"
 template: "page"
 ---
 
