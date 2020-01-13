@@ -1,0 +1,43 @@
+/* Colors */
+
+$color-body-heading: #2b2b2b;
+$color-background: #ffffff;
+$color-navi-tags: #ffd700;
+$color-navi-pages: #00e0e0;
+$color-navi-tags-bg: #ff5b6c;
+$color-body-text: #010400;
+$color-body-text-link: $color-body-text;
+$color-body-text-link-hover: darken($color-body-text-link, 10%);
+$color-breakline: #707070;
+$color-tag-database: #01a252;
+$color-tag-js: #1b1b1b;
+$color-tag-react: #00f6ff;
+$color-tag-python: #0025e0;
+$header-background: transparent linear-gradient(107deg, #01A0E4 0%, #0066CC 100%) 0% 0% no-repeat padding-box;
+
+
+/* Typography */
+
+// Index
+
+$body-font-size: 24px/33px;
+$body-font-family: 'Roboto Mono', monospace;
+
+$postlist-heading-font-size: 34px/40px;
+$postlist-heading-font-family: 'Raleway', sans-serif;
+$postlist-heading-font-variant: 'Black';
+$postlist-heading-font-letter-spacing: 0.2px;
+
+$readtime-font-size: 17px/38px;
+$readtime-font-variant: 'Light';
+
+$tag-font-size: 20px/26px;
+
+// Pages
+
+$postpage-heading-font-size: 64px/75px;
+
+// Main page body font
+
+// Post body font
+

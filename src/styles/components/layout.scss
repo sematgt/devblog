@@ -1,0 +1,28 @@
+body {
+    margin: 0px;
+}
+
+.header {
+    min-height: 49px;
+    min-width: 100vh;
+    background: $header-background;
+}
+
+.body-wrapper {
+    display: flex;
+    max-width: 100vw*10/14;
+    align-self: center;
+}
+
+.content {
+    display: flex;
+    flex-basis: 100vw*7/10;
+    border: 1px solid black;
+}
+
+.navigation-wrapper {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100vw*2.5/10;
+}
