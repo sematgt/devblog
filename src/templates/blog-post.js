@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import config from "../../data/SiteConfig"
 import Navigation from "../components/navigation"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 export default function Template ({
     data,

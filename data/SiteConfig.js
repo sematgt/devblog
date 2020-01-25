@@ -5,6 +5,7 @@ const config = {
     // siteLogo: '/logos/logo-1024.png',
     siteUrl: 'https://www.simonbliznyuk.com/',
     repo: 'https://github.com/simonbliznyuk/devblog',
+    github: 'https://github.com/simonbliznyuk',
     pathPrefix: '',
     dateFromFormat: 'YYYY-MM-DD',
     dateFormat: 'MMMM Do, YYYY',

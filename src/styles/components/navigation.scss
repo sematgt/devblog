@@ -1,0 +1,31 @@
+.hiwords {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 300px;
+}
+
+.text-wrapper {
+    font-family: $body-font-family;
+    font-size: $body-font-size;
+    text-align: center;
+}
+
+.navigation {
+    background-color: $color-navi-bg;
+    border-radius: 6px;
+    color: white;
+    font-family: $body-font-family;
+    font-size: $body-font-size;
+    pre {
+        @extend .navigation;
+    }
+}
+
+.page-link {
+    :visited{
+        color: $color-navi-pages;
+    }
+    :hover{
+        text-decoration-style: dashed;
+    }
+}
