@@ -22,11 +22,13 @@ export default (props) => (
                 <div className="navigation-menu">
                     <pre>[</pre>
                     <pre> {'{'}</pre>
-                    <pre>   tags: [</pre>
+                    <pre>   <span className="tags-list-header">tags</span>: [</pre>
                     {data.allMarkdownRemark.distinct
                     .map(tag => (
-                    <pre><div className="navigation-menu-tag" key={tag}>{tag},</div></pre>
+                    <pre>      <span className="navigation-menu-tag" key={tag}>"{tag}",</span></pre>
                     ))}
+                    <pre>      ],</pre>
+                    <pre> {'}'},</pre>
                 </div>
             )}
         />

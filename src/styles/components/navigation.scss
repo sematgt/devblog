@@ -1,7 +1,7 @@
 .hiwords {
     display: flex;
     flex-direction: row;
-    flex-basis: 300px;
+    margin-bottom: 3px;
 }
 
 .text-wrapper {
@@ -11,6 +11,8 @@
 }
 
 .navigation {
+    @include medium;
+    margin-top: 0px;
     background-color: $color-navi-bg;
     border-radius: 6px;
     color: white;
@@ -22,10 +24,24 @@
 }
 
 .page-link {
-    :visited{
+    a {
+        text-decoration: none;
         color: $color-navi-pages;
-    }
-    :hover{
-        text-decoration-style: dashed;
+        &:visited{
+            color: $color-navi-pages;
+        }
+        &:hover{
+            border-bottom: 2px dashed;
+        }
+        &:active,
+        &:focus {
+            border-bottom: 2px solid;
+        }
     }
 }
+
+
+.newsletter {
+    margin-top: 3px;
+}
+
