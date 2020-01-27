@@ -3,30 +3,14 @@ import Layout from "../components/layout"
 import { graphql, Link } from "gatsby"
 import { Helmet } from "react-helmet"
 import config from "../../data/SiteConfig"
+import Postslist from "../components/postslist"
 
 export default function Index({data}) {
     const { edges: posts } = data.allMarkdownRemark
     return (
         <Layout>
         <Helmet title={`${config.siteTitle}`} />
-        <div className="blog-posts">
-            {posts
-                .filter(post => post.node.frontmatter.title.length > 0)
-                .map(({ node: post }) => {
-          return (
-            <div className="blog-post-preview" key={post.id}>
-              <h1>
-                <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
-              </h1>
-              <span><small>{post.frontmatter.readtime} mins read</small></span>
-              <p>{post.frontmatter.subtitle}</p>
-              <h2>{post.frontmatter.date}</h2>
-              <em>{"{"}{post.frontmatter.tags}{"}"}</em>
-            </div>
-          )
-        })
-            }
-        </div>
+        <Postslist posts={posts} />
     </Layout>
     )
         }
