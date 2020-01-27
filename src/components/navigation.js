@@ -19,25 +19,26 @@ export default (props) => (
             }
             `} 
             render={data => (
-                <div className="navigation-menu">
+                <div className="navigation-menu-tags">
                     <pre>[</pre>
                     <pre> {'{'}</pre>
                     <pre>   <span className="tags-list-header">tags</span>: [</pre>
                     {data.allMarkdownRemark.distinct
                     .map(tag => (
-                    <pre>      <span className="navigation-menu-tag" key={tag}>"{tag}",</span></pre>
+                    <pre>      <Link to={tag} activeClassName="link-active" key={tag}>"{tag}"</Link>,</pre>
                     ))}
                     <pre>      ],</pre>
                     <pre> {'}'},</pre>
                 </div>
             )}
         />
-        <div className="navigation-menu">
+        <div className="navigation-menu-links">
             {props.pages.map(page => (
                 <div className="page-link" key={page.name}>
-                    <Link to={page.link} key={page.name}>{page.name}</Link>
+                    <pre> <Link activeClassName="link-active" to={page.link} key={page.name}>{page.name}</Link>,</pre>
                 </div>
             ))}
+            <pre>]</pre>
         </div>
     </div>
     <div className="newsletter">

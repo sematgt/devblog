@@ -13,13 +13,31 @@
 .navigation {
     @include medium;
     margin-top: 0px;
+    margin-bottom: 0px;
     background-color: $color-navi-bg;
     border-radius: 6px;
-    color: white;
+    color: #ffffff;
     font-family: $body-font-family;
     font-size: $body-font-size;
     pre {
         @extend .navigation;
+    }
+}
+
+.tags-list-header {
+    background-color: $color-navi-tags-bg;
+}
+
+.navigation-menu-tags {
+    a {
+        text-decoration: none;
+        color: $color-navi-tags;
+        &:visited{
+            color: $color-navi-tags;
+        }
+        &:hover{
+            border-bottom: 2px dashed;
+        }
     }
 }
 
@@ -33,13 +51,12 @@
         &:hover{
             border-bottom: 2px dashed;
         }
-        &:active,
-        &:focus {
-            border-bottom: 2px solid;
-        }
+    }
+
+    .link-active {
+        border-bottom: 2px dashed;
     }
 }
-
 
 .newsletter {
     margin-top: 3px;
