@@ -1,8 +1,8 @@
 ---
 path: "/2nd-article"
 date: 2020-01-06
-title: "2nd. To-do plan on learning things"
-subtitle: "Here we go"
+title: "How to list tables in the current database using Postgres"
+subtitle: "A quick explanation of how to list tables in the current database inside the `psql` tool in PostgreSQL, or using SQL"
 tags: "Python"
 readtime: 12
 template: blogpost

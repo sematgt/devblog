@@ -1,8 +1,8 @@
 ---
 path: "/first-article"
 date: 2020-01-05
-title: "First publication. To-do plan on learning things"
-subtitle: "Here we go"
+title: "Creating a user on MySQL"
+subtitle: "A quick step by step guide at how to create a user on MySQL"
 tags: "Blog"
 readtime: 12
 template: blogpost

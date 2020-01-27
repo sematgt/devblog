@@ -1,0 +1,37 @@
+.post-link-wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid steelblue;
+    .post-preview-header-wrapper {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid red;
+
+        .post-preview-header {
+            border: 1px solid red;
+            font-family: $postlist-heading-font-family;
+            font-weight: 900;
+            font-size: $postlist-heading-font-size;
+            letter-spacing: $postlist-heading-font-letter-spacing;
+            color: $color-body-heading;
+        }
+
+        .post-preview-readtime {
+            font-family: $postlist-heading-font-family;
+            font-size: $readtime-font-size;
+            font-weight: 300;
+        }
+
+        .post-preview-tags {
+            font-family: $body-font-family;
+            font-size: $tag-font-size;
+        }
+    }
+
+    .post-preview-subtitle {
+        font-family: $body-font-family;
+        font-size: $body-font-size;
+    }
+
+}
+

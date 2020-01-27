@@ -1,9 +1,9 @@
 ---
-path: "/3-article"
-date: 2020-01-06
-title: "3. To-do plan on learning things"
-subtitle: "Here we go. This is my learning progress."
-tags: "Python"
+path: "/first-article"
+date: 2020-01-05
+title: "How to list all users in Postgres"
+subtitle: "Find out how to get a list of all the users present in a Postgres database, and their permissions"
+tags: "Blog"
 readtime: 12
 template: blogpost
 ---

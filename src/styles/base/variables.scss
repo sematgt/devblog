@@ -22,18 +22,22 @@ $header-background: transparent linear-gradient(107deg, #01A0E4 0%, #0066CC 100%
 
 // Index
 
-$body-font-size: 24px/33px;
+$body-font-size: 24px;
+$body-font-line-height: 33px;
 $body-font-family: 'Roboto Mono', monospace;
 
-$postlist-heading-font-size: 34px/40px;
+$postlist-heading-font-size: 34px;
+$postlist-heading-line-height: 40px;
 $postlist-heading-font-family: 'Raleway', sans-serif;
 $postlist-heading-font-variant: 'Black';
 $postlist-heading-font-letter-spacing: 0.2px;
 
-$readtime-font-size: 17px/38px;
+$readtime-font-size: 17px;
+$readtime-font-line-height: 38px;
 $readtime-font-variant: 'Light';
 
-$tag-font-size: 20px/26px;
+$tag-font-size: 20px;
+$tag-font-line-height: 26px;
 
 // Pages
 
