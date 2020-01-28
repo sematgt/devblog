@@ -5,3 +5,15 @@
 @mixin underlined{
     text-decoration: underline;
 }
+
+@mixin mobile-breakpoint {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+@mixin mobile-small-breakpoint {
+    @media (max-width: #{$mobile-small}) {
+        @content;
+    }
+}
