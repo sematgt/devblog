@@ -7,8 +7,8 @@ export default (props) => (
                 .filter(post => post.node.frontmatter.title.length > 0)
                 .map(({ node: post }) => {
           return (
-            <div className="blog-post-preview" key={post.id}>
-            {/* <Link to={post.frontmatter.path}> */}
+            <>
+            <Link to={post.frontmatter.path} key={post.id}>
             <div className="post-link-wrapper">
                 <div className="post-preview-header-wrapper">
                     <div className="post-preview-header">
@@ -21,12 +21,13 @@ export default (props) => (
                         {"{"}{post.frontmatter.tags}{"}"}
                     </div>
                 </div>
-              <div className="post-preview-subtitle">
+                <div className="post-preview-subtitle">
                   {post.frontmatter.subtitle}
-              </div>
+                   <hr />
+                </div>
             </div>
-            {/* </Link> */}
-            </div>
+            </Link>
+            </>
           )
         })
             }

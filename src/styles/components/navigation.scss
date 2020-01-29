@@ -46,8 +46,7 @@
 .navigation-menu-tags {
     a {
         text-decoration: none;
-        color: $color-navi-tags;
-        &:visited {
+        &, &:visited {
             color: $color-navi-tags;
         }
         &:hover{

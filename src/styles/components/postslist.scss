@@ -1,4 +1,15 @@
+a {
+    & , &:visited {
+        text-decoration: none;
+        color: inherit;
+        user-select: text;
+    }
+}
+
 .post-link-wrapper {
+    &:hover{
+        background-color: $color-hover;
+    }
     display: flex;
     flex-direction: column;
     border: 1px solid steelblue;
@@ -28,15 +39,21 @@
 
         .post-preview-tags {
             font: $tag-font;
+            justify-self: flex-end;
             border: 1px solid black;
         }
     }
     
     .post-preview-subtitle {
+        
         border: 1px solid black;
         font-family: $body-font-family;
         font-size: $body-font-size;
         line-height: $body-font-line-height;
+
+        hr {
+            border: 1px dashed #707070;
+        }
     }
 
 }
