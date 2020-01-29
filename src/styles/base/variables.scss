@@ -2,6 +2,8 @@
 
 $mobile: 900px;
 $mobile-small: 450px;
+$mobile-margin: 600px;
+$mobile-textsize: 200px;
 
 /* Colors */
 
@@ -45,6 +47,14 @@ $readtime-font-line-height: 1.56rem;
 $readtime-font-variant: 'Light';
 
 $tag-font: Bold 0.81rem/1.1rem Roboto Mono;
+
+// Index-mobile
+
+$body-mobile-font-size: 0.6rem;
+$postlist-heading-mobile-font-size: 0.9rem;
+
+$body-font-mobile-line-height: 0.8rem;
+$postlist-heading-mobile-line-height: 1rem;
 
 // Pages
 

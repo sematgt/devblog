@@ -7,9 +7,9 @@ export default (props) => (
                 .filter(post => post.node.frontmatter.title.length > 0)
                 .map(({ node: post }) => {
           return (
-            <>
+            <React.Fragment key={post.id}>
             <Link to={post.frontmatter.path} key={post.id}>
-            <div className="post-link-wrapper">
+            <div className="post-preview">
                 <div className="post-preview-header-wrapper">
                     <div className="post-preview-header">
                         {post.frontmatter.title}
@@ -23,11 +23,10 @@ export default (props) => (
                 </div>
                 <div className="post-preview-subtitle">
                   {post.frontmatter.subtitle}
-                   <hr />
                 </div>
             </div>
             </Link>
-            </>
+            </React.Fragment>
           )
         })
             }

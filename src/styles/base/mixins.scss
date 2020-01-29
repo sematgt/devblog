@@ -17,3 +17,15 @@
         @content;
     }
 }
+
+@mixin mobile-margin-breakpoint {
+    @media (max-width: #{$mobile-margin}) {
+        @content;
+    }
+}
+
+@mixin mobile-textsize-breakpoint {
+    @media (max-width: #{$mobile-textsize}) {
+        @content;
+    }
+}

@@ -47,8 +47,40 @@ body {
 @include mobile-small-breakpoint {
     .content {
         overflow: scroll;
-        .post-link-wrapper .post-preview-header-wrapper {
-            flex-direction: column;
+        .post-preview {
+            .post-preview-header-wrapper {
+                flex-direction: column;
+                .post-preview-readtime {
+                    align-self: auto;
+                }
+                .post-preview-tags {
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+}
+
+@include mobile-margin-breakpoint {
+    .content {
+        // flex-basis: 100vw*0.92;
+        flex-basis: 94%;
+    }
+}
+
+@include mobile-textsize-breakpoint {
+    .content {
+        .post-preview {
+            .post-preview-header-wrapper {
+                .post-preview-header {
+                    font-size: $postlist-heading-mobile-font-size;
+                    line-height: $postlist-heading-mobile-line-height;
+                }
+            }
+            .post-preview-subtitle {
+                font-size: $body-mobile-font-size;
+                line-height: $body-font-mobile-line-height;
+            }
         }
     }
 }

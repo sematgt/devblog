@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Navigation from "./navigation"
 import config from "../../data/SiteConfig"
 import "../styles/main.scss"
