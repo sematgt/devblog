@@ -22,27 +22,29 @@ $color-tag-python: #0025e0;
 $color-hover: #FDFFC6;
 $header-background: transparent linear-gradient(107deg, #01A0E4 0%, #0066CC 100%) 0% 0% no-repeat padding-box;
 
+/* Margins */
+
+$postlist-header-margin: 0 0 0 0px;
 
 /* Typography */
 
 // Index
 
-$body-font-size: 24px;
-$body-font-line-height: 33px;
+$body-font-size: 1rem;
+$body-font-line-height: 1.68rem;
 $body-font-family: 'Roboto Mono', monospace;
 
-$postlist-heading-font-size: 34px;
-$postlist-heading-line-height: 40px;
+$postlist-heading-font-size: 1.7rem;
+$postlist-heading-line-height: 2.06rem;
 $postlist-heading-font-family: 'Raleway', sans-serif;
 $postlist-heading-font-variant: 'Black';
 $postlist-heading-font-letter-spacing: 0.2px;
 
-$readtime-font-size: 17px;
-$readtime-font-line-height: 38px;
+$readtime-font-size: 0.68rem;
+$readtime-font-line-height: 1.56rem;
 $readtime-font-variant: 'Light';
 
-$tag-font-size: 20px;
-$tag-font-line-height: 26px;
+$tag-font: Bold 0.81rem/1.1rem Roboto Mono;
 
 // Pages
 

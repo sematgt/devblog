@@ -2,36 +2,41 @@
     display: flex;
     flex-direction: column;
     border: 1px solid steelblue;
+    flex-basis: 152px;
     .post-preview-header-wrapper {
         display: flex;
         flex-direction: row;
         border: 1px solid red;
 
         .post-preview-header {
-            border: 1px solid red;
+            border: 1px solid black;
             font-family: $postlist-heading-font-family;
             font-weight: 900;
             font-size: $postlist-heading-font-size;
             letter-spacing: $postlist-heading-font-letter-spacing;
             color: $color-body-heading;
+            line-height: $postlist-heading-line-height;
+            margin: $postlist-header-margin;
         }
 
         .post-preview-readtime {
             font-family: $postlist-heading-font-family;
             font-size: $readtime-font-size;
             font-weight: 300;
+            border: 1px solid black;
         }
 
         .post-preview-tags {
-            font-family: $body-font-family;
-            font-size: $tag-font-size;
-            justify-self: right;
+            font: $tag-font;
+            border: 1px solid black;
         }
     }
-
+    
     .post-preview-subtitle {
+        border: 1px solid black;
         font-family: $body-font-family;
         font-size: $body-font-size;
+        line-height: $body-font-line-height;
     }
 
 }
