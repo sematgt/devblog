@@ -24,13 +24,21 @@ $color-tag-python: #0025e0;
 $color-hover: #FDFFC6;
 $header-background: transparent linear-gradient(107deg, #01A0E4 0%, #0066CC 100%) 0% 0% no-repeat padding-box;
 
+// tags colors
+
+$python: rgb(165, 162, 0);
+$design: rgb(0, 48, 182);
+$react: #00E0E0;
+$blog: #9c002f;
+$error: #121212;
+
 /* Margins */
 
 $postlist-header-margin: 0 0 0 0px;
 
 /* Typography */
 
-// Index
+// index
 
 $body-font-size: 1rem;
 $body-font-line-height: 1.68rem;
@@ -48,7 +56,7 @@ $readtime-font-variant: 'Light';
 
 $tag-font: Bold 0.81rem/1.1rem Roboto Mono;
 
-// Index-mobile
+// index-mobile
 
 $body-mobile-font-size: 0.6rem;
 $postlist-heading-mobile-font-size: 0.9rem;
@@ -56,7 +64,7 @@ $postlist-heading-mobile-font-size: 0.9rem;
 $body-font-mobile-line-height: 0.8rem;
 $postlist-heading-mobile-line-height: 1rem;
 
-// Pages
+// pages
 
 $postpage-heading-font-size: 64px/75px;
 

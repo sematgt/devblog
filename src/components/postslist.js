@@ -17,7 +17,7 @@ export default (props) => (
                     <div className="post-preview-readtime">
                         {post.frontmatter.readtime} mins read
                     </div>
-                    <div className="post-preview-tags">
+                    <div className="post-preview-tags" data-tag={post.frontmatter.tags}>
                         {"{"}{post.frontmatter.tags}{"}"}
                     </div>
                 </div>

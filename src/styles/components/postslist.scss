@@ -19,6 +19,7 @@ a {
         flex-direction: row;
         border: 1px solid red;
         justify-content: space-between;
+        min-height: 76px;
         
         .post-preview-header {
             border: 1px solid black;
@@ -43,6 +44,12 @@ a {
             font: $tag-font;
             margin-left: auto;
             border: 1px solid black;
+            &[data-tag="Python"] {
+                color: $python;
+            }
+            &[data-tag="Blog"] {
+                color: $blog;
+            }
         }
     }
     
@@ -52,6 +59,7 @@ a {
         font-family: $body-font-family;
         font-size: $body-font-size;
         line-height: $body-font-line-height;
+        min-height: 76px;
 
         hr {
             border: 0px;
