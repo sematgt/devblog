@@ -1,8 +1,12 @@
+pre {
+    margin-top: 2.3px !important;
+}
+
 .hiwords {
     display: flex;
     flex-direction: row;
-    margin-bottom: 3px;
-    border: 1px solid grey;
+    margin-bottom: 1rem;
+    // border: 1px solid grey;
 }
 
 .text-wrapper {
@@ -14,8 +18,7 @@
 
 .navigation {
     @include medium;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0;
     background-color: $color-navi-bg;
     border-radius: 6px;
     color: #ffffff;
@@ -26,7 +29,7 @@
     }
 }
 
-.navigation-wrapper {
+.menu {
     a {
         color: inherit;
         &:visited {
@@ -36,7 +39,7 @@
             background-color: $color-hover;
         }
     }
-    border: 1px solid grey;
+    // border: 1px solid grey;
 }
 
 .tags-list-header {
@@ -44,38 +47,43 @@
 }
 
 .navigation-menu-tags {
+    margin-top: 1.3rem;
     a {
         text-decoration: none;
         &, &:visited {
             color: $color-navi-tags;
         }
         &:hover{
-            border-bottom: 2px dashed;
+            border-bottom: 1.5px dashed;
             background-color: transparent;
         }
     }
 }
 
-.page-link {
-    a {
-        text-decoration: none;
-        color: $color-navi-pages;
-        &:visited{
+.navigation-menu-links {
+    margin-bottom: 1.3rem;
+    .page-link {
+        margin: 0 auto;
+        a {
+            text-decoration: none;
             color: $color-navi-pages;
+            &:visited{
+                color: $color-navi-pages;
+            }
+            &:hover{
+                border-bottom: 1.5px dashed;
+                background-color: transparent;
+            }
         }
-        &:hover{
+        
+        .link-active {
             border-bottom: 2px dashed;
-            background-color: transparent;
         }
-    }
-    
-    .link-active {
-        border-bottom: 2px dashed;
     }
 }
 
 .newsletter {
-    margin-top: 3px;
-    border: 1px solid grey;
+    margin-top: 1rem;
+    // border: 1px solid grey;
 }
 

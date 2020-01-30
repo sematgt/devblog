@@ -22,9 +22,17 @@ body {
     margin-left: 57.8px;
     // border: 1px solid black;
     max-width: 670px;
+
+    a {
+        & , &:visited {
+            text-decoration: none;
+            color: inherit;
+            user-select: text;
+        }
+    }
 }
 
-.navigation-wrapper {
+.menu {
     // border: 1px solid black;
     display: flex;
     flex-direction: column;
@@ -34,7 +42,7 @@ body {
 }
 
 @include mobile-breakpoint {
-    .navigation-wrapper {
+    .menu {
         display: none;
     }
 

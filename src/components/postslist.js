@@ -23,6 +23,7 @@ export default (props) => (
                 </div>
                 <div className="post-preview-subtitle">
                   {post.frontmatter.subtitle}
+                 <div className="divider"></div>
                 </div>
             </div>
             </Link>
