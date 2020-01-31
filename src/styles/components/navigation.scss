@@ -54,7 +54,7 @@ pre {
             color: $color-navi-tags;
         }
         &:hover{
-            border-bottom: 1.5px dashed;
+            border-bottom: 2px dashed;
             background-color: transparent;
         }
     }
@@ -71,7 +71,7 @@ pre {
                 color: $color-navi-pages;
             }
             &:hover{
-                border-bottom: 1.5px dashed;
+                border-bottom: 2px dashed;
                 background-color: transparent;
             }
         }

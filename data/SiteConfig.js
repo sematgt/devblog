@@ -1,5 +1,5 @@
 const config = {
-    siteTitle: 'Simon Bliznyuk`s dev blog',
+    siteTitle: 'yao dev blog',
     siteTitleShort: 'Simon Bliznyuk',
     siteTitleAlt: 'Simon Bliznyuk',
     siteUrl: 'https://www.simonbliznyuk.com/',

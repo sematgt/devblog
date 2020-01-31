@@ -7,7 +7,7 @@ $mobile-textsize: 200px;
 
 /* Colors */
 
-$color-body-heading: #2b2b2b;
+$color-body-heading: #424242;
 $color-background: #ffffff;
 $color-navi-tags: #ffd700;
 $color-navi-pages: #00e0e0;
@@ -26,11 +26,16 @@ $header-background: transparent linear-gradient(107deg, #01A0E4 0%, #0066CC 100%
 
 // tags colors
 
-$python: rgb(165, 162, 0);
-$design: rgb(0, 48, 182);
+$python: rgb(255, 251, 41);
+$python-bg: rgb(71, 71, 211);
+$design: rgb(255, 255, 255);
+$design-bg: transparent linear-gradient(107deg, #01A0E4 0%, #0066CC 100%) 0% 0% no-repeat padding-box;
 $react: #00E0E0;
+$react-bg: rgb(0, 0, 0);
 $blog: #9c002f;
-$error: #121212;
+$blog-bg: rgb(255, 239, 239);
+$javascript: rgb(245, 245, 0);
+$javascript-bg: #121212;
 
 /* Margins */
 
@@ -45,7 +50,7 @@ $body-font-line-height: 1.68rem;
 $body-font-family: 'Roboto Mono', monospace;
 
 $postlist-heading-font-size: 1.7rem;
-$postlist-heading-line-height: 2.06rem;
+$postlist-heading-line-height: 2.1rem;
 $postlist-heading-font-family: 'Raleway', sans-serif;
 $postlist-heading-font-variant: 'Black';
 $postlist-heading-font-letter-spacing: 0.2px;

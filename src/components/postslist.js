@@ -12,19 +12,16 @@ export default (props) => (
             <div className="post-preview">
                 <div className="post-preview-header-wrapper">
                     <div className="post-preview-header">
-                        {post.frontmatter.title}
-                    </div>
-                    <div className="post-preview-readtime">
-                        {post.frontmatter.readtime} mins read
+                        {post.frontmatter.title} <small>{post.frontmatter.readtime} mins read</small>
                     </div>
                     <div className="post-preview-tags" data-tag={post.frontmatter.tags}>
-                        {"{"}{post.frontmatter.tags}{"}"}
+                        <p>{"{"}{post.frontmatter.tags}{"}"}</p>
                     </div>
                 </div>
                 <div className="post-preview-subtitle">
                   {post.frontmatter.subtitle}
-                 <div className="divider"></div>
                 </div>
+                 <div className="divider"></div>
             </div>
             </Link>
             </React.Fragment>

@@ -7,14 +7,13 @@
     display: flex;
     flex-direction: column;
     // border: 1px solid steelblue;
-    min-height: 152px;
-    margin-bottom: 10px;
     .post-preview-header-wrapper {
         display: flex;
         flex-direction: row;
         // border: 1px solid red;
         justify-content: space-between;
-        min-height: 76px;
+        margin-left: 0.4rem;
+        margin-right: 0.4rem;
         
         .post-preview-header {
             // border: 1px solid black;
@@ -25,25 +24,42 @@
             color: $color-body-heading;
             line-height: $postlist-heading-line-height;
             margin: $postlist-header-margin;
-        }
-
-        .post-preview-readtime {
-            font-family: $postlist-heading-font-family;
-            font-size: $readtime-font-size;
-            font-weight: 300;
-            // border: 1px solid black;
-            // align-self: flex-end;
+            small {
+                font-size: #{$postlist-heading-font-size/2};
+                font-weight: 400;
+            }
         }
 
         .post-preview-tags {
             font: $tag-font;
             margin-left: auto;
             // border: 1px solid black;
+            p {
+                margin: 0.6rem auto 0 auto;
+            }
             &[data-tag="Python"] {
-                color: $python;
+                p {
+                    color: $python;
+                    background: $python-bg;
+                }
             }
             &[data-tag="Blog"] {
-                color: $blog;
+                p{
+                    color: $blog;
+                    background: $blog-bg;
+                }
+            }
+            &[data-tag="Design"] {
+                p {
+                    color: $design;
+                    background: $design-bg;
+                }
+            }
+            &[data-tag="JavaScript"] {
+                p {
+                    color: $javascript;
+                    background: $javascript-bg;
+                }
             }
         }
     }
@@ -54,26 +70,17 @@
         font-family: $body-font-family;
         font-size: $body-font-size;
         line-height: $body-font-line-height;
-        min-height: 76px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin: 0.3rem 0.4rem 0 0.4rem;
 
-        .divider {
-            // border: 1;
-            // border-image-source: url('/src/images/border-image.png');
-            // // display: block;
-            // height: 10px;
-            // border-image-slice: 1 1 1 1;
-            // border-image-width: 0px 12px 0px 12px;
-            // border-image-outset: 0px 0px 0px 0px;
-            // border-image-repeat: repeat;
-            border-bottom: 1.5px dashed #888;
-            margin-bottom: 7.5px;
-            // margin-top: auto;
-
-        }
     }
+            .divider {
+                border-bottom: 2px dashed #888;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
 
 }
 
