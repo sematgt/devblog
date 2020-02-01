@@ -5,7 +5,6 @@ import "../styles/main.scss"
 import { Link } from "gatsby"
 
 export default function Layout(props) {
-    console.log(props);
     const sidebar = props.sidebar;
     if (sidebar === "on") {
         return (

@@ -1,3 +1,12 @@
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: $body-font-family;
+    font-size: $body-font-size;
+    line-height: $body-font-line-height;
+  }
+  
+
 body {
     margin: 0px;
 }
@@ -50,6 +59,15 @@ body {
     .content {
         margin-left: 0px;
         flex-basis: 100vw*0.75;
+        min-width: unset !important;
+        max-width: unset;
+    }
+}
+
+@include mobile-margin-breakpoint {
+    .content {
+        // flex-basis: 100vw*0.92;
+        flex-basis: 94%;
     }
 }
 
@@ -70,12 +88,6 @@ body {
     }
 }
 
-@include mobile-margin-breakpoint {
-    .content {
-        // flex-basis: 100vw*0.92;
-        flex-basis: 94%;
-    }
-}
 
 @include mobile-textsize-breakpoint {
     .content {
