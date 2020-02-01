@@ -8,7 +8,7 @@ import Postslist from "../components/postslist"
 export default function Index({data}) {
     const { edges: posts } = data.allMarkdownRemark
     return (
-        <Layout>
+        <Layout sidebar="on">
         <Helmet title={`${config.siteTitle}`} />
         <Postslist posts={posts} />
     </Layout>

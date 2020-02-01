@@ -43,7 +43,7 @@ export default (props) => (
         </div>
         <div className="newsletter">
           <div className="text-wrapper">
-            You can get materials directly from me by email. <span role="img" aria-label="mailbox">📬</span> 
+            You can get post updates directly from me <span role="img" aria-label="mailbox">📬 </span> 
             I`ll never send you a spam. <span role="img" aria-label="letter">📨</span> <a href="#">Subscribe to newsletter.</a> 
           </div>
     </div>

@@ -1,15 +1,3 @@
-// @function tag-color($tag) {
-//     @if $tag == "Python" {
-//         @return $python;
-//     }
-//     @if $tag == 'Design' {
-//         @return $design;
-//     }
-//     @if $tag == 'Blog' {
-//         @return $blog;
-//     }
-//     @if $tag == 'React' {
-//         @return $react;
-//     }
-//     @return $error;
+// @function tag-bg($tag) {
+//     @return $#{$tag}-bg;
 // }

@@ -14,6 +14,7 @@
         justify-content: space-between;
         margin-left: 0.4rem;
         margin-right: 0.4rem;
+        margin-top: 1.5rem;
         
         .post-preview-header {
             // border: 1px solid black;
@@ -32,11 +33,13 @@
 
         .post-preview-tags {
             font: $tag-font;
+            font-style: italic;
             margin-left: auto;
             // border: 1px solid black;
             p {
                 margin: 0.6rem auto 0 auto;
             }
+            //TO:DO refactor
             &[data-tag="Python"] {
                 p {
                     color: $python;
@@ -76,11 +79,11 @@
         margin: 0.3rem 0.4rem 0 0.4rem;
 
     }
-            .divider {
-                border-bottom: 2px dashed #888;
-                margin-top: 15px;
-                margin-bottom: 15px;
-            }
+
+    .divider {
+        border-bottom: 2px dotted #888;
+        margin-top: 1.5rem;
+    }
 
 }
 

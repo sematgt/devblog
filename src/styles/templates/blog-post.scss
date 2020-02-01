@@ -1,0 +1,11 @@
+.blog-post {
+    a {
+        color: inherit;
+        &:visited {
+            color: inherit;
+        }
+        &:hover {
+            background-color: $color-hover;
+        }
+    }
+}

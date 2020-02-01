@@ -1,7 +1,7 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 import config from "../../data/SiteConfig"
-import Navigation from "../components/navigation"
+import Layout from '../components/layout'
+import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
 
 export default function Template ({
@@ -10,15 +10,16 @@ export default function Template ({
     const { markdownRemark: post } = data
     return (
         <div className="blog-post-container">
-            <Helmet title={`${config.siteTitle} - ${post.frontmatter.title}`} />
-            <Link to="/">Main page <span role="img" aria-label="home">🏡</span></Link>
-            <Navigation pages={config.menuLinks} />
+        <Helmet title={`${config.siteTitle} - ${post.frontmatter.title}`} />        
+          <Layout sidebar="off">
             <div className="blog-post">
+            <Link to="/">Main page <span role="img" aria-label="home">🏡</span></Link>
                 <h1>{post.frontmatter.title}</h1>
                 <div 
                     className="blog-post-content"
                     dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>
+          </Layout>
         </div>
     )
 }

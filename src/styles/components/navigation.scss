@@ -54,7 +54,7 @@ pre {
             color: $color-navi-tags;
         }
         &:hover{
-            border-bottom: 2px dashed;
+            border-bottom: 2px dotted;
             background-color: transparent;
         }
     }
@@ -71,13 +71,13 @@ pre {
                 color: $color-navi-pages;
             }
             &:hover{
-                border-bottom: 2px dashed;
+                border-bottom: 2px dotted;
                 background-color: transparent;
             }
         }
         
         .link-active {
-            border-bottom: 2px dashed;
+            border-bottom: 2px dotted;
         }
     }
 }
