@@ -2,7 +2,6 @@ import React from "react"
 import Navigation from "./navigation"
 import config from "../../data/SiteConfig"
 import "../styles/main.scss"
-import { Link } from "gatsby"
 
 export default function Layout(props) {
     const sidebar = props.sidebar;

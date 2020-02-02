@@ -1,6 +1,8 @@
 html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
     font-family: $body-font-family;
     font-size: $body-font-size;
     line-height: $body-font-line-height;
