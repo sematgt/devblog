@@ -74,30 +74,34 @@ import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
 
 export default function Template ({
-    data,
+  data,
 }) {
-    const { markdownRemark: post } = data
-    return (
-        <div className="blog-post-container">
-        <Helmet title={`${config.siteTitle} - ${post.frontmatter.title}`} />        
-          <Layout sidebar="off">
-            <div className="blog-post">
-            <Link to="/">Main page <span role="img" aria-label="home">🏡</span></Link>
-                <h1>{post.frontmatter.title}</h1>
-                <div className="post-info" data-tag={post.frontmatter.tags}>
-                <small>{post.frontmatter.readtime} mins read on <span>{"{"}{post.frontmatter.tags}{"}"}</span>
-                </small>
-                </div>
-                <div className="post-preview-subtitle">
-                  {post.frontmatter.subtitle}
-                </div>
-                <div 
-                    className="blog-post-content"
-                    dangerouslySetInnerHTML={{ __html: post.html }} />
-            </div>
-          </Layout>
+  const { markdownRemark: post } = data
+  return (
+    <div className="blog-post-container">
+    <Helmet title={`${config.siteTitle} - ${post.frontmatter.title}`} />
+      <Layout sidebar="off">
+        <div className="blog-post">
+        <Link to="/">
+          Main page <span role="img" aria-label="home">🏡</span>
+        </Link>
+          <h1>{post.frontmatter.title}</h1>
+          <div className="post-info" data-tag={post.frontmatter.tags}>
+          <small>{post.frontmatter.readtime} mins read on <span>
+          {"{"}{post.frontmatter.tags}{"}"}
+          </span>
+          </small>
+          </div>
+          <div className="post-preview-subtitle">
+            {post.frontmatter.subtitle}
+          </div>
+          <div 
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
-    )
+      </Layout>
+    </div>
+  )
 }
 ```
 
@@ -122,7 +126,8 @@ An image sir
   <div class="sidebar-module sidebar-module-inset">
     <h4>About</h4>
     <p>
-      Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit
+      Etiam porta <em>sem malesuada magna</em> 
+      mollis euismod. Cras mattis consectetur purus sit
       amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
     </p>
   </div>
