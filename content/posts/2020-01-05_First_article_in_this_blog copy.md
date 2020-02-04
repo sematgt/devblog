@@ -66,7 +66,7 @@ A string of code:
 
 A block of code:
 
-``` javascript {1, 4-5}
+``` jsx
 import React from "react"
 import config from "../../data/SiteConfig"
 import Layout from '../components/layout'
@@ -175,7 +175,7 @@ term
 
 ### CLI
 
-```bash{outputLines: 3-5}{promptUser: alice}{promptHost: dev.localhost}
+```bash
 $ ls
 bin/  etc/           LICENSE.txt  ReleaseNotes.html  unins000.exe*
 cmd/  git-bash.exe*  mingw64/     tmp/               unins000.msg

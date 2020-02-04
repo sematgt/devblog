@@ -16,12 +16,16 @@ export default function Template ({
             <Link to="/">Main page <span role="img" aria-label="home">🏡</span></Link>
                 <h1>{post.frontmatter.title}</h1>
                 <div className="post-info" data-tag={post.frontmatter.tags}>
-                <small>{post.frontmatter.readtime} mins read on <span>{"{"}{post.frontmatter.tags}{"}"}</span>
+                <div className="post-preview-tags">
+                  <p>{"{"}{post.frontmatter.tags}{"}"}</p>
+                </div>
+                <small>{post.frontmatter.readtime} mins read
                 </small>
                 </div>
                 <div className="post-preview-subtitle">
                   {post.frontmatter.subtitle}
                 </div>
+                <hr />
                 <div 
                     className="blog-post-content"
                     dangerouslySetInnerHTML={{ __html: post.html }} />
