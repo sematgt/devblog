@@ -14,35 +14,79 @@
         }
         &:hover {
             background-color: $color-hover;
+          }
         }
-    }
+      }
+      
+.post-subtitle {
+  font-family: $postlist-heading-font-family;
+  letter-spacing: 0.7px;
+  font-weight: 400;
+  // margin-bottom: 0.335em;
+  font-size: 1rem;
 }
 
 h1 {
-    font-size: $h1;
+  font-size: $h1;
+  margin-bottom: 0.11em;
+  font-weight: 900;
   }
 
   h2 {
     font-size: $h2;
   }
-
+  
   h3 {
     font-size: $h3;
   }
-
+  
   h4 {
     font-size: $h4;
   }
-
+  
   h5 {
     font-size: $h5;
   }
-
+  
   h1,
   h2,
   h3,
   h4,
   h5 {
-      font-family: $postlist-heading-font-family;
-      line-height: $postlist-heading-line-height*1.2;
+    font-family: $postlist-heading-font-family;
+    line-height: $postlist-heading-line-height*1.2;
+    color: $color-body-heading;
   }
+  
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: 700;
+  }
+    
+    .blog-post-content {
+      p,
+      ol,
+      ul,
+      li,
+  dl,
+  table {
+    font-size: 1rem;
+  }
+}
+
+hr {
+  margin-top: 0.67em;
+}
+
+blockquote {
+  border-left: 5px solid $color-body-heading;
+  font-style: italic;
+  padding-left: 1.2rem;
+  margin-left: -1.6rem;
+  opacity: 0.9;
+  p {
+    font-size: #{$body-font-size*1.2} !important;
+  }
+}

@@ -28,7 +28,6 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          "gatsby-remark-prismjs", 
           {
             resolve: "gatsby-remark-images",
             options: {
@@ -41,9 +40,10 @@ module.exports = {
               offsetY: `100`,
               maintainCase: false,
               removeAccents: true,
-              isIconAfterHeader: true,
+              isIconAfterHeader: false,
             },
           },
+          "gatsby-remark-prismjs",
         ],
 
       },
