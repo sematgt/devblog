@@ -160,7 +160,7 @@ An image sir
 | Title   | Description |
 | ------- | ----- |
 | Aragorn | Human |
-| Gimli   | Dwarf |
+| Gimli   | Dwarf       |
 | Legolas | Elf   |
 
 ### Footnote
