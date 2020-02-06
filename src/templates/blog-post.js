@@ -1,6 +1,7 @@
 import React from "react"
 import config from "../../data/SiteConfig"
 import Layout from '../components/layout'
+import Footer from '../components/footer'
 import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
 
@@ -23,6 +24,7 @@ export default function Template ({
                 <div 
                     className="blog-post-content"
                     dangerouslySetInnerHTML={{ __html: post.html }} />
+            <Footer />
             </div>
           </Layout>
         </div>

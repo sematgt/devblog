@@ -163,12 +163,6 @@ An image sir
 | Gimli   | Dwarf       |
 | Legolas | Elf   |
 
-### Footnote
-
-Here's a sentence with footnote. [^1]
-
-[^1]: this is the footnote.
-
 ### Definition list
 
 term

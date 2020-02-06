@@ -1,10 +1,10 @@
 const config = {
-    siteTitle: 'yao dev blog',
+    siteTitle: 'Simon`s dev blog',
     siteTitleShort: 'Simon Bliznyuk',
     siteTitleAlt: 'Simon Bliznyuk',
     siteUrl: 'https://www.simonbliznyuk.com/',
     repo: 'https://github.com/sbliznyuk/devblog',
-    github: 'https://github.com/sbliznyuk',
+    github: 'https://github.com/semaphore8',
     pathPrefix: '',
     dateFromFormat: 'YYYY-MM-DD',
     dateFormat: 'MMMM Do, YYYY',

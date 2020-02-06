@@ -114,3 +114,12 @@ table {
     border-bottom: 2px dotted lightgrey;
   }
 }
+
+.footer {
+  margin: 1rem 0;
+  .links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
