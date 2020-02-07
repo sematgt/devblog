@@ -4,10 +4,18 @@ path: "/projects"
 template: "page"
 ---
 
-## Project1
+## 📅 Class schedule
 
-I have some *nice project*
+Class schedule MVC single-page web-application with admin interface.
 
-## Project2
+Built on: *Django REST Framework, React, JavaScript, MaterialUI*
 
-I have some *nice project #2*
+[Source](https://github.com/semaphore8/schedule_nngu)
+
+## 💻 My dev blog
+
+Blog-theme for Gatsby based on my personal page.
+
+Built on: *Gatsby, React, GraphQL, Sass*
+
+[Demo](https://www.simonbliznyuk.com) [Source](https://github.com/semaphore8/devblog)
