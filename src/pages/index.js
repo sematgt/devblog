@@ -34,7 +34,7 @@ class Index extends React.Component {
     return (
       <Layout sidebar="on" handleClick={this.handleClick}>
         <Helmet title={`${config.siteTitle}`} />
-        <Postslist posts={posts} filtered={filtered}/>
+        <Postslist posts={posts} filtered={filtered} handleClick={this.handleClick}/>
       </Layout>
   )
   }

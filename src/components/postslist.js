@@ -6,8 +6,8 @@ export default (props) => (
     {   
         props.filtered === true &&
         <div className="filtered">
-            <Link to="/"><span role="img" aria-label="back">🔙 </span>All tags</Link>
-            <div>Posts on {props.posts["0"].node.frontmatter.tags}<span role="img" aria-label="arrow">⤵</span></div>
+            <Link to={"/"} onClick={() => {props.handleClick()}}><span role="img" aria-label="back">🔙 </span>All tags</Link>
+            <span> Posts on {props.posts["0"].node.frontmatter.tags} <span role="img" aria-label="arrow">⤵️</span></span>
         </div>
     }
             {props.posts

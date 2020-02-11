@@ -1,4 +1,11 @@
-
+.filtered {
+    margin-top: 1.5rem;
+    a {
+        &:hover {
+            background-color: $color-hover;
+        }
+    }
+}
 
 .post-preview {
     &:hover{
@@ -87,4 +94,6 @@
     }
 
 }
+
+
 
