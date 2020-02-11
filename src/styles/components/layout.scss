@@ -6,6 +6,9 @@ html {
     font-family: $body-font-family;
     font-size: $body-font-size;
     line-height: $body-font-line-height;
+    :any-link{
+        color: inherit;
+    }
   }
   
 
@@ -34,13 +37,17 @@ body {
     // border: 1px solid black;
     max-width: 670px;
 
-    a {
-        & , &:visited {
-            text-decoration: none;
-            color: inherit;
-            user-select: text;
+    .blog-posts {
+        width: 100%;
+        a[class="postlink"] {
+            & , &:visited {
+                text-decoration: none;
+                color: inherit;
+                user-select: text;
+            }
         }
     }
+
 }
 
 .menu {

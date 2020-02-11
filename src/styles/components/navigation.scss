@@ -53,7 +53,7 @@ pre {
         &, &:visited {
             color: $color-navi-tags;
         }
-        &:hover{
+        &:hover, &:active{
             border-bottom: 2px dotted;
             background-color: transparent;
         }

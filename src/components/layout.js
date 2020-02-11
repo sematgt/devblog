@@ -10,7 +10,7 @@ export default function Layout(props) {
             <div className="layout">
                 <div className="header"></div>
                 <div className="body-wrapper">
-                    <Navigation pages={config.menuLinks} />
+                    <Navigation pages={config.menuLinks} handleClick={props.handleClick}/>
                     <div className="content">{props.children}</div>
                 </div>
             </div>

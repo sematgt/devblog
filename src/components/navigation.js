@@ -25,7 +25,7 @@ export default (props) => (
                         <pre>        <span className="tags-list-header">tags</span>: [</pre>
                         {data.allMarkdownRemark.distinct
                         .map(tag => (
-                        <pre key={tag}>         <Link to={"/"+ tag} activeClassName="link-active" key={tag}>"{tag}"</Link>,</pre>
+                        <pre key={tag}>         <Link to={"/"} activeClassName="link-active" key={tag} onClick={() => {props.handleClick(tag)}}>"{tag}"</Link>,</pre>
                         ))}
                         <pre>         ],</pre>
                         <pre>     {'}'},</pre>
