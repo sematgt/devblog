@@ -15,12 +15,15 @@ export default function Template ({
           <Layout sidebar="off">
             <div className="blog-post">
             <Link to="/">Main page <span role="img" aria-label="home">🏡</span></Link>
-                <h1>{post.frontmatter.title} <small>{post.frontmatter.readtime} mins read
-                </small></h1>
+                <div className="blog-heading">
+                <h1>{post.frontmatter.title}</h1>
                 <div className="post-subtitle">
                   {post.frontmatter.subtitle}
                 </div>
-                {/* <hr /> */}
+                <small>{post.frontmatter.readtime} mins read
+                </small>
+                <hr />
+                </div>
                 <div 
                     className="blog-post-content"
                     dangerouslySetInnerHTML={{ __html: post.html }} />

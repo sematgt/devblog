@@ -43,7 +43,12 @@ module.exports = {
               isIconAfterHeader: false,
             },
           },
-          "gatsby-remark-prismjs",
+          {
+            resolve: "gatsby-remark-prismjs",
+            options: {
+              inlineCodeMarker: '>',
+            }
+          },
         ],
 
       },

@@ -4,17 +4,21 @@ date: 2020-01-06
 title: "Things I don't know"
 subtitle: "As a software developer"
 tags: "Blog"
-readtime: 12
+readtime: 3
 template: blogpost
 ---
 
 ## Introduction
 
+> «Any man can do what another man has done»
+
 Hello. I'm Simon. I learn tech and write about it.
 
 This is my first article in English ever.
 
-My mind has always been very curious about new areas of knowledge and since I was in school I remember I always wanted to be more like a W-shape person. About 2 months ago I've decided to commit to the ["Learn in public"](https://www.swyx.io/writing/learn-in-public/) concept by Shawn Wang, so here are my plans to the near future.
+My mind has always been very curious about new areas of knowledge and since I was in school I remember I always wanted to be more like an M-shape person in [T-shape](https://medium.com/@jchyip/why-t-shaped-people-e8706198e437) terminology.
+
+About 2 months ago I've decided to commit to the ["Learn in public"](https://www.swyx.io/writing/learn-in-public/) concept by Shawn Wang, so here are my plans for the near future.
 
 ## To-do plan
 
@@ -106,3 +110,7 @@ My mind has always been very curious about new areas of knowledge and since I wa
 - [ ] Basic Analytics
 - [ ] Basic Marketing
 - [ ] Basics Researching
+
+### IoT
+
+- [ ] 101
