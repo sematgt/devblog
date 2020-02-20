@@ -32,6 +32,8 @@ module.exports = {
             resolve: "gatsby-remark-images",
             options: {
               maxWidth: 670,
+              linkImagesToOriginal: true,
+              wrapperStyle: '-webkit-box-shadow: 10px 10px 19px -4px rgba(0,0,0,0.25); -moz-box-shadow: 10px 10px 19px -4px rgba(0,0,0,0.25); box-shadow: 10px 10px 19px -4px rgba(0,0,0,0.25); margin: 0 0 2rem',
             },
           },
           {

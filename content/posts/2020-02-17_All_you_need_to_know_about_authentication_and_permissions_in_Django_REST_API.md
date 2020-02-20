@@ -31,13 +31,13 @@ Permissions are used for different classes of users and for different parts of t
 
 Permissions in DRF represents a list of classes which must be checked before any code executes. There are 7 built-in [permission classes]([https://www.django-rest-framework.org/api-guide/permissions/#api-reference](https://www.django-rest-framework.org/api-guide/permissions/#api-reference)) in DRF:
 
-- AllowAny
-- IsAuthenticated
-- IsAdminUser
-- IsAuthenticatedOrReadOnly
-- DjangoModelPermissions
-- DjangoModelPermissionsOrAnonReadOnly
-- DjangoObjectPermissions
+- `AllowAny`
+- `IsAuthenticated`
+- `IsAdminUser`
+- `IsAuthenticatedOrReadOnly`
+- `DjangoModelPermissions`
+- `DjangoModelPermissionsOrAnonReadOnly`
+- `DjangoObjectPermissions`
 
 And you can [build it custom]([https://www.django-rest-framework.org/api-guide/permissions/#custom-permissions](https://www.django-rest-framework.org/api-guide/permissions/#custom-permissions)) by yourself.
 
@@ -133,12 +133,12 @@ Auth may be 4 built in types:
 
 Auth scheme as a permissions can be set globally:
 
-    
-    
+
+​    
 
 On views or viewsets:
 
-    
+​    
 
 ## Summary
 
