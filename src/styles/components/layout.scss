@@ -3,15 +3,15 @@ html {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
-    font-family: $body-font-family;
-    font-size: $body-font-size;
-    line-height: $body-font-line-height;
+    font-family: $body-font-type;
+    font-size: $base-font-size;
+    color: rgba(0, 0, 0, (1-$body-font-gray-value));
+    line-height: $line-height;
     :any-link{
         color: inherit;
     }
   }
   
-
 body {
     margin: 0px;
 }
@@ -84,14 +84,17 @@ body {
     .content {
         overflow: scroll;
         .post-preview {
-            .post-preview-header-wrapper {
+            .post-preview-header-string {
                 flex-direction: column;
-                .post-preview-readtime {
-                    align-self: auto;
-                }
-                .post-preview-tags {
-                    margin-left: 0px;
-                }
+                // .post-preview-readtime {
+                //     align-self: auto;
+                // }
+                // .post-preview-tags {
+                //     margin-left: 0px;
+                // }
+            }
+            .post-preview-subtitle-string {
+                flex-direction: column;
             }
         }
     }
@@ -101,15 +104,25 @@ body {
 @include mobile-textsize-breakpoint {
     .content {
         .post-preview {
-            .post-preview-header-wrapper {
+            .post-preview-header-string {
                 .post-preview-header {
-                    font-size: $postlist-heading-mobile-font-size;
-                    line-height: $postlist-heading-mobile-line-height;
+                    font-size: $base-font-size*0.75;
+                    line-height: $line-height*0.75;
+                }
+                .post-preview-readtime {
+                    font-size: $base-font-size*0.75;
+                    line-height: $line-height*0.75;
                 }
             }
-            .post-preview-subtitle {
-                font-size: $body-mobile-font-size;
-                line-height: $body-font-mobile-line-height;
+            .post-preview-subtitle-string {
+                .post-preview-subtitle {
+                    font-size: $base-font-size*0.75;
+                    line-height: $line-height*0.75;
+                }
+                .post-preview-tags {
+                    font-size: $base-font-size*0.75;
+                    line-height: $line-height*0.75;
+                }
             }
         }
     }

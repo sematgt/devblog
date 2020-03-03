@@ -14,79 +14,86 @@
     display: flex;
     flex-direction: column;
     // border: 1px solid steelblue;
-    .post-preview-header-wrapper {
+    .post-preview-header-string {
         display: flex;
         flex-basis: 100%;
         flex-direction: row;
         // border: 1px solid red;
         justify-content: space-between;
-        margin-left: 0.4rem;
-        margin-right: 0.4rem;
-        margin-top: 1.5rem;
+        margin: 1.5rem 0.4rem 0 0.4rem;
         
         .post-preview-header {
             // border: 1px solid black;
-            font-family: $postlist-heading-font-family;
-            font-weight: 900;
-            font-size: $postlist-heading-font-size;
-            letter-spacing: $postlist-heading-font-letter-spacing;
-            color: $color-body-heading;
-            line-height: $postlist-heading-line-height;
-            margin: $postlist-header-margin;
-            small {
-                font-size: #{$postlist-heading-font-size/2};
-                font-weight: 400;
-            }
+            font-family: $headers-font-type;
+            font-weight: $headers-font-weight;
+            font-size: $base-font-size*1.5;
+            color: rgba(0, 0, 0, (1-$headers-font-gray-value));
+            line-height: $line-height/1.5;
+            margin: 0;
         }
-
-        .post-preview-tags {
-            font: $tag-font;
-            font-style: italic;
-            margin-left: auto;
-            // border: 1px solid black;
-            p {
-                margin: 0.6rem auto 0 auto;
-            }
-            //TO:DO refactor
-            &[data-tag="Python"] {
-                p {
-                    color: $python;
-                    background: $python-bg;
-                }
-            }
-            &[data-tag="Blog"] {
-                p{
-                    color: $blog;
-                    background: $blog-bg;
-                }
-            }
-            &[data-tag="Design"] {
-                p {
-                    color: $design;
-                    background: $design-bg;
-                }
-            }
-            &[data-tag="JavaScript"] {
-                p {
-                    color: $javascript;
-                    background: $javascript-bg;
-                }
+        
+        .post-preview-readtime{
+            span.readtime {
+                font-size: smaller;
+                // border: 1px solid black;
             }
         }
     }
     
-    .post-preview-subtitle {
-        
+    .post-preview-subtitle-string {
         // border: 1px solid black;
-        font-family: $body-font-family;
-        font-size: $body-font-size;
-        line-height: $body-font-line-height;
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
         margin: 0.3rem 0.4rem 0 0.4rem;
-
+        
+        .post-preview-subtitle {
+            // border: 1px solid black;
+            // border: 1px solid black;
+            font-family: $body-font-family;
+            font-size: $body-font-size;
+            line-height: $body-font-line-height;
+        }
+        
+        .post-preview-tags {
+            // font: $tag-font;
+            // border: 1px solid black;
+            font-style: italic;
+            // line-height: $line-height;
+            // border: 1px solid black;
+    
+    
+            span.tags {
+                @include bolder;
+                font-size: smaller;
+                vertical-align: middle;
+            }
+            //TO:DO refactor
+            p[data-tag="Python"] {
+                    color: $python;
+                    background: $python-bg;
+            }
+            span[data-tag="Blog"] {
+                    color: $blog;
+                    background: $blog-bg;
+                    border-left: 5px solid lighten($blog, 30%);
+            }
+            p[data-tag="Design"] {
+                    color: $design;
+                    background: $design-bg;
+            }
+            p[data-tag="JavaScript"] {
+                    color: $javascript;
+                    background: $javascript-bg;
+            }
+            span[data-tag="Django"] {
+                    color: $django;
+                    background: $django-bg;
+                    border-left: 5px solid $django-border;
+            }
+        }
     }
+    
+    
 
     .divider {
         border-bottom: 2px dotted #888;

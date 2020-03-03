@@ -1,19 +1,12 @@
-/* Breakpoints */
-
-$mobile: 900px;
-$mobile-margin: 600px;
-$mobile-small: 450px;
-$mobile-textsize: 200px;
-
 /* Colors */
 
-$color-body-heading: #424242;
+$color-body-heading: #494949;
 $color-background: #ffffff;
 $color-navi-tags: #ffd700;
 $color-navi-pages: #00e0e0;
 $color-navi-bg: #2B2B2B;
 $color-navi-tags-bg: #ff5b6c;
-$color-body-text: #010400;
+$color-body-text: #424242;
 $color-body-text-link: $color-body-text;
 $color-body-text-link-hover: darken($color-body-text-link, 10%);
 $color-breakline: #707070;
@@ -32,10 +25,14 @@ $design: rgb(255, 255, 255);
 $design-bg: transparent linear-gradient(107deg, #01A0E4 0%, #0066CC 100%) 0% 0% no-repeat padding-box;
 $react: #00E0E0;
 $react-bg: rgb(0, 0, 0);
-$blog: #9c002f;
+// $blog: #9c002f;
+$blog: rgb(211, 19, 45);
 $blog-bg: rgb(255, 239, 239);
 $javascript: rgb(245, 245, 0);
 $javascript-bg: #121212;
+$django: #FFFFFF;
+$django-bg: #003509;
+$django-border: black;
 
 /* Margins */
 
@@ -45,9 +42,9 @@ $postlist-header-margin: 0 0 0 0px;
 
 // index
 
-$body-font-size: 1rem;
-$body-font-line-height: 1.68rem;
-$body-font-family: 'Roboto Mono', monospace;
+$body-font-size: 1.2rem;
+$body-font-line-height: 2.4rem;
+$body-font-family: 'Roboto Slab', serif;
 
 $postlist-heading-font-size: 1.7rem;
 $postlist-heading-line-height: 2.1rem;

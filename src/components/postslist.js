@@ -17,16 +17,21 @@ export default (props) => (
             <React.Fragment key={post.id}>
             <Link className="postlink" to={post.frontmatter.path} key={post.id}>
             <div className="post-preview">
-                <div className="post-preview-header-wrapper">
+                <div className="post-preview-header-string">
                     <div className="post-preview-header">
-                        {post.frontmatter.title} <small>{post.frontmatter.readtime} mins read</small>
+                        {post.frontmatter.title} 
                     </div>
-                    <div className="post-preview-tags" data-tag={post.frontmatter.tags}>
-                        <p>{"{"}{post.frontmatter.tags}{"}"}</p>
+                    <div className="post-preview-readtime">
+                        <span className="readtime">{post.frontmatter.readtime} mins read</span>
                     </div>
                 </div>
-                <div className="post-preview-subtitle">
-                  {post.frontmatter.subtitle}
+                <div className="post-preview-subtitle-string">
+                    <div className="post-preview-subtitle">
+                        {post.frontmatter.subtitle}
+                    </div>
+                    <div className="post-preview-tags">
+                        <span className="tags" data-tag={post.frontmatter.tags}>{post.frontmatter.tags}</span>
+                    </div>
                 </div>
                  <div className="divider"></div>
             </div>
