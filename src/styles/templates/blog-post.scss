@@ -14,8 +14,12 @@
 }
 
 .blog-post, .blog-page {
-    a {
-        text-decoration: underline;
+  font-size: $base-font-size*1.1;
+     
+      a {
+        text-decoration: none;
+        border-bottom: 4px solid rgb(245, 250, 111);
+        // padding-bottom: 1px;
         color: inherit;
         &:visited {
             color: inherit;
@@ -24,8 +28,12 @@
             background-color: $color-hover;
           }
         }
-      }
       
+      a.anchor.before {
+        border-bottom: none;
+      }
+}
+
 .post-subtitle {
   font-family: $postlist-heading-font-family;
   letter-spacing: 0.7px;
@@ -73,12 +81,14 @@ h5 {
   color: $color-body-heading;
 }
 
-h1,  
+h1 {
+  font-weight: 900;
+}  
 h2,
 h3,
 h4,
 h5 {
-  font-weight: 900;
+  font-weight: 700;
 }
     
 .blog-post-content {
