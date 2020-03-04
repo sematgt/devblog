@@ -14,11 +14,11 @@
 }
 
 .blog-post, .blog-page {
-  font-size: $base-font-size*1.1;
+  // font-size: $base-font-size*1.1;
      
       a {
         text-decoration: none;
-        border-bottom: 4px solid rgb(245, 250, 111);
+        border-bottom: 4px solid $color-hover;
         // padding-bottom: 1px;
         color: inherit;
         &:visited {
@@ -78,7 +78,7 @@ h4,
 h5 {
   font-family: $postlist-heading-font-family;
   line-height: $postlist-heading-line-height*1.35;
-  color: $color-body-heading;
+  color: rgba(0, 0, 0, (1-$headers-font-gray-value));
 }
 
 h1 {

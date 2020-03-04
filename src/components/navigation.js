@@ -22,12 +22,12 @@ export default (props) => (
                     <div className="navigation-menu-tags">
                         <pre>  [</pre>
                         <pre>     {'{'}</pre>
-                        <pre>        <span className="tags-list-header">tags</span>: [</pre>
+                        <pre>       <span className="tags-list-header">tags</span>: [</pre>
                         {data.allMarkdownRemark.distinct
                         .map(tag => (
-                        <pre key={tag}>         <Link to={"/"} activeClassName="link-active" key={tag} onClick={() => {props.handleClick(tag)}}>"{tag}"</Link>,</pre>
+                        <pre key={tag}>        <Link to={"/"} activeClassName="link-active" key={tag} onClick={() => {props.handleClick(tag)}}>"{tag}"</Link>,</pre>
                         ))}
-                        <pre>         ],</pre>
+                        <pre>        ],</pre>
                         <pre>     {'}'},</pre>
                     </div>
                 )}
