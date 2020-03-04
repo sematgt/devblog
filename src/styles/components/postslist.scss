@@ -49,9 +49,9 @@
         .post-preview-subtitle {
             // border: 1px solid black;
             // border: 1px solid black;
-            font-family: $body-font-family;
-            font-size: $body-font-size;
-            line-height: $body-font-line-height;
+            font-family: $headers-font-type;
+            // font-size: $body-font-size;
+            // line-height: $line-height;
         }
         
         .post-preview-tags {
@@ -66,29 +66,30 @@
                 @include bolder;
                 font-size: smaller;
                 vertical-align: middle;
+                padding-right: 2px;
             }
             //TO:DO refactor
-            p[data-tag="Python"] {
+            span[data-tag="Python"] {
                     color: $python;
                     background: $python-bg;
             }
             span[data-tag="Blog"] {
                     color: $blog;
                     background: $blog-bg;
-                    border-left: 5px solid lighten($blog, 30%);
+                    border-right: 5px solid lighten($blog, 30%);
             }
-            p[data-tag="Design"] {
+            span[data-tag="Design"] {
                     color: $design;
                     background: $design-bg;
             }
-            p[data-tag="JavaScript"] {
+            span[data-tag="JavaScript"] {
                     color: $javascript;
                     background: $javascript-bg;
             }
             span[data-tag="Django"] {
                     color: $django;
                     background: $django-bg;
-                    border-left: 5px solid $django-border;
+                    border-right: 5px solid $django-border;
             }
         }
     }
