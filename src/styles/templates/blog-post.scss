@@ -18,14 +18,14 @@
      
       a {
         text-decoration: none;
-        border-bottom: 4px solid $color-hover;
+        border-bottom: 4px solid #ffee00;
         // padding-bottom: 1px;
         color: inherit;
         &:visited {
-            color: inherit;
+          color: inherit;
         }
         &:hover {
-            background-color: $color-hover;
+          background-color: $color-hover;
           }
         }
       

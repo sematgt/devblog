@@ -76,7 +76,6 @@
             span[data-tag="Blog"] {
                     color: $blog;
                     background: $blog-bg;
-                    border-right: 5px solid lighten($blog, 30%);
             }
             span[data-tag="Design"] {
                     color: $design;
@@ -89,7 +88,6 @@
             span[data-tag="Django"] {
                     color: $django;
                     background: $django-bg;
-                    border-right: 5px solid $django-border;
             }
         }
     }
