@@ -17,7 +17,7 @@ Let's dive into it! 🙂
 ## Goals
 
 1. Learn how permissions and authentication is used in Django REST Framework.
-2. Learn how to quick and simply implement access control to API. 
+2. Learn how to quick and simply implement access control to API.
 
 ## Prerequisites
 
@@ -25,11 +25,11 @@ What u should know to start this tutorial? More links there!
 
 ## Let`s start
 
-In Django REST Framework(DRF) permissions together with authentication and [throttling]([https://www.django-rest-framework.org/api-guide/throttling/](https://www.django-rest-framework.org/api-guide/throttling/)) determine whether a request to API should be granted or denied access.
+In Django REST Framework(DRF) permissions together with authentication and [throttling](<[https://www.django-rest-framework.org/api-guide/throttling/](https://www.django-rest-framework.org/api-guide/throttling/)>) determine whether a request to API should be granted or denied access.
 
 Permissions are used for different classes of users and for different parts of the API. DRF always check permissions before running any code in views.
 
-Permissions in DRF represents a list of classes which must be checked before any code executes. There are 7 built-in [permission classes]([https://www.django-rest-framework.org/api-guide/permissions/#api-reference](https://www.django-rest-framework.org/api-guide/permissions/#api-reference)) in DRF:
+Permissions in DRF represents a list of classes which must be checked before any code executes. There are 7 built-in [permission classes](<[https://www.django-rest-framework.org/api-guide/permissions/#api-reference](https://www.django-rest-framework.org/api-guide/permissions/#api-reference)>) in DRF:
 
 - `AllowAny`
 - `IsAuthenticated`
@@ -39,7 +39,7 @@ Permissions in DRF represents a list of classes which must be checked before any
 - `DjangoModelPermissionsOrAnonReadOnly`
 - `DjangoObjectPermissions`
 
-And you can [build it custom]([https://www.django-rest-framework.org/api-guide/permissions/#custom-permissions](https://www.django-rest-framework.org/api-guide/permissions/#custom-permissions)) by yourself.
+And you can [build it custom](<[https://www.django-rest-framework.org/api-guide/permissions/#custom-permissions](https://www.django-rest-framework.org/api-guide/permissions/#custom-permissions)>) by yourself.
 
 Permissions may be set globally to all API, on an object level or right into the views.
 
@@ -63,7 +63,7 @@ The second way to set permissions in out Django project's is to specify it in vi
 
 First of all we need to pull Django REST Framework API starter from Github repo and run it's virtual environment:
 
-> Note: if you have a problems running this commands on Windows, try to use [Windows style paths]([https://en.wikipedia.org/wiki/Path_(computing)#MS-DOS/Microsoft_Windows_style](https://en.wikipedia.org/wiki/Path_(computing)#MS-DOS/Microsoft_Windows_style)) with backslashes.
+> Note: if you have a problems running this commands on Windows, try to use [Windows style paths](<[https://en.wikipedia.org/wiki/Path_(computing)#MS-DOS/Microsoft_Windows_style](https://en.wikipedia.org/wiki/Path_(computing)#MS-DOS/Microsoft_Windows_style)>) with backslashes.
 
 ```bash
 git clone https://github.com/semaphore8/Django-REST-Framework-API-starter.git ./starter
@@ -71,7 +71,7 @@ cd ./starter
 source ./env/Scripts/activate # for Windows just enter .\env\Scripts\activate.bat
 ```
 
- Then let's open this project in IDE. In my case it is VS Code:
+Then let's open this project in IDE. In my case it is VS Code:
 
 ```bash
 code .
@@ -91,27 +91,31 @@ Let's try to add a group. Head over the 'groups' endpoint and add a group called
 
 ![./1_2.png](../images/1_2.png)
 
-To set permissions to our views we 
+To set permissions to our views we
 
 ```jsx
-export default function Template ({
- data,
-}) {
- const { markdownRemark: page } = data
- return (
-  <div className="blog-page-container">
-   <Helmet title={`${config.siteTitle} - ${page.frontmatter.title}`} />
-   <Layout sidebar="off">
-    <div className="blog-page">
-     <Link to="/">Main page <span role="img" aria-label="home">🏡</span></Link>
-     <h1>{page.frontmatter.title}</h1>
-     <div
-      className="blog-page-content"
-      dangerouslySetInnerHTML={{ __html: page.html }} />
+export default function Template({ data }) {
+  const { markdownRemark: page } = data
+  return (
+    <div className="blog-page-container">
+      <Helmet title={`${config.siteTitle} - ${page.frontmatter.title}`} />
+      <Layout sidebar="off">
+        <div className="blog-page">
+          <Link to="/">
+            Main page{" "}
+            <span role="img" aria-label="home">
+              🏡
+            </span>
+          </Link>
+          <h1>{page.frontmatter.title}</h1>
+          <div
+            className="blog-page-content"
+            dangerouslySetInnerHTML={{ __html: page.html }}
+          />
+        </div>
+      </Layout>
     </div>
-   </Layout>
-  </div>
- )
+  )
 }
 ```
 
@@ -133,12 +137,11 @@ Auth may be 4 built in types:
 
 Auth scheme as a permissions can be set globally:
 
-
-​    
+​
 
 On views or viewsets:
 
-​    
+​
 
 ## Summary
 
