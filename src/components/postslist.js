@@ -22,7 +22,7 @@ export default (props) => (
                         {post.frontmatter.title} 
                     </div>
                     <div className="post-preview-readtime">
-                        <span className="readtime">{post.frontmatter.readtime} mins read</span>
+                        <div className="readtime">{post.frontmatter.readtime} mins read</div>
                     </div>
                 </div>
                 <div className="post-preview-subtitle-string">

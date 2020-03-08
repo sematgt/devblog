@@ -6,7 +6,7 @@ template: "page"
 
 ## 📅 Class schedule
 
-Class schedule MVC single-page web-application with admin interface.
+Class schedule MVC single-page web-application with admin interface
 
 Built on: *Django REST Framework, React, JavaScript, MaterialUI*
 
@@ -14,8 +14,16 @@ Built on: *Django REST Framework, React, JavaScript, MaterialUI*
 
 ## 💻 My dev blog
 
-Blog-theme for Gatsby based on my personal page.
+Blog-theme for Gatsby based on my personal page
 
 Built on: *Gatsby, React, GraphQL, Sass*
 
 [Demo](https://www.simonbliznyuk.com) [Source](https://github.com/semaphore8/devblog)
+
+## 🎨 Mokaidia
+
+PrismJS theme based on "okaidia"
+
+Built on: *CSS*
+
+[Demo & Source](https://github.com/semaphore8/mokaidia)
