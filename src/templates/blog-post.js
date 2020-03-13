@@ -9,7 +9,7 @@ export default function Template({ data }) {
   const { markdownRemark: post } = data
   return (
     <div className="blog-post-container">
-      <Helmet title={`${config.siteTitle} - ${post.frontmatter.title}`} />
+      <Helmet title={`${post.frontmatter.title} - ${config.siteTitle} `} />
       <Layout sidebar="off">
         <div className="blog-post">
           <Link to="/">

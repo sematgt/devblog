@@ -63,5 +63,16 @@ module.exports = {
         removeAccents: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Simon's dev blog`,
+        short_name: `Simon's dev blog`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#fff`,
+        icon: `static/logos/favicon.ico`,
+      },
+    },
   ],
 }

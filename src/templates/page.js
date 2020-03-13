@@ -10,7 +10,7 @@ export default function Template ({
     const { markdownRemark: page } = data
     return (
         <div className="blog-page-container">
-            <Helmet title={`${config.siteTitle} - ${page.frontmatter.title}`} />
+            <Helmet title={`${page.frontmatter.title} - ${config.siteTitle}`} />
             <Layout sidebar="off">
               <div className="blog-page">
                   <Link to="/">Main page <span role="img" aria-label="home">🏡</span></Link>
