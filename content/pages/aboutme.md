@@ -6,7 +6,7 @@ template: "page"
 
 Hi, I'm Simon, full-stack software engineer and writer.
 
-I've built my first web-page at 16 in Macromedia Dreamweaver. It was "A quantum physics in simple terms" educational site. I remember I used some random googled JavaScript scenarios for dynamic menus and my site was starting through VisualBasic app with drum'n'bass 😁. I had pretty much zero understanding of what's going on inside😊. Now when I got a Master's Degree in CS and went through some projects I have a little bit more knowledge about the insides of this thing called web application.
+I've built my first web-page at 16 in Macromedia Dreamweaver. It was "A quantum physics in simple terms" educational site. I remember I used some random googled JavaScript scenarios for dynamic menus and my site was starting through VisualBasic app with drum'n'bass 😂. I had pretty much zero understanding of what's going on inside😊. Now when I got a Master's Degree in CS and went through some projects I have a little bit more knowledge about the insides of this thing called web application.
 
 📚 I'm a big fan of [learning](https://www.simonbliznyuk.com/things-i-dont-know) new technologies and discovering how things work.
 

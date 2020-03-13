@@ -2,7 +2,7 @@
 path: "/things-i-dont-know"
 date: 2020-01-06
 title: "Things I don't know"
-subtitle: "As a software developer"
+subtitle: "As a software engineer"
 tags: "Blog"
 readtime: 3
 template: blogpost
@@ -14,103 +14,109 @@ template: blogpost
 
 Hello. I'm Simon. I learn tech and write about it.
 
-This is my first article in English ever.
-
 My mind has always been very curious about new areas of knowledge and since I was in school I remember I always wanted to be more like an M-shape person in [T-shape](https://medium.com/@jchyip/why-t-shaped-people-e8706198e437) terminology.
 
-About 2 months ago I've decided to commit to the ["Learn in public"](https://www.swyx.io/writing/learn-in-public/) concept by Shawn Wang, so here are my plans for the near future.
+This autumn I've decided to commit to the ["Learn in public"](https://www.swyx.io/writing/learn-in-public/) concept by Shawn Wang, so here are my plans for the future.
 
 ## To-do plan
 
 ### Python
 
-- [x] "Learning Python" Mark Lutz
-- [ ] "Programming Python" Mark Lutz
-- [x] Django
-- [x] Django REST Framework
-- [x] Selenium
-- [ ] Django Channels
-- [ ] Helpers Django
-- [x] Saleor
-- [ ] Celery+rabbitmq
+- ~~"Learning Python" Mark Lutz~~
 
-### Versioning
-
-- [x] Git 101
-- [ ] Advanced Git
-- [x] Mercurial
-- [x] SVN
-
-### OS, CLI
-
-- [x] Bash
-- [x] cmd.exe
-- [x] PowerShell 101
-- [x] Linux core knowledge
-- [ ] regex
+- "Programming Python" Mark Lutz
+- ~~Django~~
+- ~~Django REST Framework~~
+- ~~Selenium~~
+- Django Channels
+- Helpers Django
+- ~~Saleor~~
+- Celery+rabbitmq
 
 ### DevOps
 
-- [x] Docker
-- [ ] Ansible
-- [ ] Webpack
-- [ ] CI/CD
-
-### QA
-
-- [x] Redmine
-- [x] JIRA
-- [ ] TDD Python
-- [x] Selenium
-- [ ] JS testing
+- ~~Docker~~
+- Ansible
+- Webpack
+- CI/CD
 
 ### DB
 
-- [ ] MongoDB
-- [x] PostgreSQL
-- [ ] Firebase
-- [x] GraphQL
+- MongoDB
+- ~~PostgreSQL~~
+- Firebase
+- ~~GraphQL~~
 
 ### UI/UX Design
 
-- [x] Design fundamentals
-- [x] Typography
-- [x] Color picking
-- [x] Adobe XD
-- [ ] Animation
-- [ ] Basic Illustrations
-- [ ] UX Basics
-
-### CSS
-
-- [x] CSS
-- [x] SCSS
-- [x] SASS
+- ~~Design fundamentals~~
+- ~~Typography~~
+- ~~Color picking~~
+- ~~Adobe XD~~
+- Animation
+- Basic Illustrations
+- UX Basics
 
 ### Networking
 
-- [ ] Sockets
+- Sockets
 
 ### JavaScript
 
-- [x] Basic JavaScript
-- [ ] Advanced JavaScript
-- [x] React
-- [ ] Redux
-- [x] MaterialUI
-- [ ] Advanced React
-- [ ] Node.js crash course
+- ~~Basic JavaScript~~
+- Advanced JavaScript
+- ~~React~~
+- Redux
+- ~~MaterialUI~~
+- Advanced React
+- Node.js crash course
 
 ### Product Management
 
-- [x] OKRs, SMART
-- [ ] User Story, Job Story
-- [ ] Scrum, Kanbun, Less, Agile
-- [ ] Lean Startup principles
-- [ ] Basic Analytics
-- [ ] Basic Marketing
-- [ ] Basics Researching
+- ~~OKRs, SMART~~
+- ~~Customer Journey Map, User Flow~~
+- ~~Jobs To Be Done~~
+- User Story, Job Story
+- Scrum, Kanbun, Less, Agile
+- ~~Lean Startup principles~~
+- ~~Basic Analytics~~
+- Basic Marketing
+- Basics Researching
 
 ### IoT
 
-- [ ] 101
+- 101
+
+### AI
+
+- 101
+
+### Versioning
+
+- ~~Git 101~~
+- Advanced Git
+- ~~Mercurial~~
+- ~~SVN~~
+
+### OS, CLI
+
+- ~~Bash~~
+- ~~cmd.exe~~
+- ~~PowerShell 101~~
+- ~~Linux core knowledge~~
+- regex
+
+### CSS
+
+- ~~CSS~~
+- ~~SCSS~~
+- ~~SASS~~
+
+### QA
+
+- ~~Redmine~~
+- ~~JIRA~~
+- TDD Python
+- ~~Selenium~~
+- JS testing
+

@@ -1,23 +1,19 @@
 ---
-path: "/All-you-need-to-know-about-authentication-and-permissions-in-Django-REST-API"
+path: "/All-you-need-to-know-about-permissions-in-Django-REST-Framework"
 date: 2020-02-17
-title: "All you need to know about authentication and permissions in Django REST API"
+title: "All you need to know about permissions in Django REST Framework"
 subtitle: "As a web developer"
 tags: "Django"
-readtime: 7
+readtime: 12
 template: blogpost
 ---
 
-Internet security is a process and you always need to get an eye on the latest security vulnerabilities of a tech stack that you've chosen to build your web app. But if you are using Django it won't be such a big problem as Django provides pretty nice out-of-the-box security solutions so you don't have to implement big amount of things by yourself.
-
-Authentication and authorization is the first thing you need to know in order to make your REST API secure and well protected. After this tutorial you will realize that it's not that hard.
-
-Let's get into it! 🙂
+Permissions are the first thing you need to know in order to make your REST API secure and well protected. After this tutorial, you will realize that it's not that hard.
 
 ## Goals
 
-1. Learn how permissions and authentication is used in Django REST Framework.
-2. Learn how to quick and simply implement access control to API.
+1. Learn how permissions are used in Django REST Framework.
+2. Learn how to quick and simply implement it to your API.
 
 ## Prerequisites
 
@@ -32,7 +28,7 @@ In Django REST Framework(DRF) permissions together with authentication and [thro
 
 Permissions are used for different classes of users and for different parts of the API. DRF always check permissions before running any code in views.
 
-Permissions in DRF represents a list of classes which must be checked before any code executes. There are 7 built-in permission classes in DRF:
+Permissions in DRF represent a list of classes that must be checked before any code executes. There are 7 pre-built permission classes in DRF:
 
 - `AllowAny`
 - `IsAuthenticated`
@@ -47,10 +43,10 @@ You can either [build custom classes](https://www.django-rest-framework.org/api-
 Permissions in Django REST Framework may be set in 3 different ways:
 
 1. Globally to all API endpoints  
-2. On an object level 
-3. Right into the views.
+2. Into the views or viewsets
+3. On an object level 
 
-Now let's take a look on each of this methods. In this article I'll use this [Django REST Framework starter](https://github.com/semaphore8/Django-REST-Framework-API-starter.git). You can clone it to your local machine and pass through this tutorial with me.
+Now let's take a look at each of these methods. In this article, I'll use this [Django REST Framework starter](https://github.com/semaphore8/Django-REST-Framework-API-starter.git). You can clone it to your local machine and pass-through this tutorial with me.
 
 ### Setting permissions globally
 
@@ -82,7 +78,7 @@ REST_FRAMEWORK = {
 
 ### Setting permissions in views
 
-The second way to set permissions in out Django project's is to specify it in the views(or in the viewsets).
+The second way to set permissions in our Django project is to specify it in the views(or in the viewsets).
 
 We have 3 viewsets in `views.py`:
 
@@ -112,7 +108,7 @@ class TaskViewSet(viewsets.ModelViewSet):
 
 Let's add a permissions to the 'Groups' viewset. You can do it by simply adding `permission_classes` definition to viewset class. We'll use one of the DRF's built-in permissions. Don't forget to import it from `rest_framework.permissions` module:
 
-```python{5,12}
+```python{7,13}
 from django.shortcuts import render
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
@@ -144,38 +140,65 @@ As you can see now we can't get access to users list endpoint:
 
 ### Setting permission in objects
 
-DRF is also support object-level permissioning. Object is usually refers to Django's model instance.
+DRF is also supporting object-level permissioning. Object-level permissions are usually used when some type of user is allowed or restricted to interact with a particular object. An object in this case typically refers to a model instance.
 
-Let's add a model called 'Task' to our `models.py` file:
+As you can see in our database we have some tasks assigned to either Bob or Alice.
 
+![../images/posts/1/1_4.png](../images/posts/1/1_4.png)
 
+Consider all users can view a list of current tasks, but only the person who was delegated to work on the specific task has access to its details.
 
-## Authentication
+To implement such behavior on our API we should build a custom permission class. Let's make a local module `permissions.py` in our Django app's folder (near `views.py`) and add our new class here.
 
-### Setting the authentication scheme
+In order to implement custom permission in the object level, we must inherit from `BasePermission` DRF's class and override `.has_permission(self, request, view)` method:
 
-Auth may be 4 built in types:
+```python
+from rest_framework import permissions
 
-1
+class IsAssigned(permissions.BasePermission): 
+    """
+    Only person who assigned has permission
+    """
 
-2
+    def has_object_permission(self, request, view, obj):
+		# check if user who launched request is object owner 
+        if obj.assigned_to == request.user: 
+            return True
+        else:
+            return False
+```
 
-3
+Now we need to add permissions to our `TaskViewSet` in `views.py`. Don't forget to import it.
 
-4
+```python{1,7}
+from .permissions import IsAssigned
 
-Auth scheme as a permissions can be set globally:
+#...
 
+class TaskViewSet(viewsets.ModelViewSet):
 
+    queryset = Task.objects.all()
+    serializer_class = TaskSerializer
+    permission_classes = [IsAssigned]
+```
 
-On views or viewsets:
+At this point if you login to API as "Alice" (password is the same as login), you could see tasks list but couldn't get to Bob's tasks:
 
-
+ ![../images/posts/1/1_5.png](../images/posts/1/1_5.png)
 
 ## Summary
 
-We`ve learned how to:
+Internet security is a process and you always need to get an eye on the latest security vulnerabilities of a tech stack that you've chosen to build your web app. 
 
-Now you know how to implement authorization to your API.
+If you are using Django it won't be such a big problem as Django provides pretty nice out-of-the-box security solutions so you don't have to implement a big amount of things by yourself.
 
-This is the first checkpoint of the security process of your web-app. Here is some more security recommendations from Django team. [https://docs.djangoproject.com/en/3.0/topics/security/](https://docs.djangoproject.com/en/3.0/topics/security/)
+We`ve learned:
+
+- What are permissions in Django REST Framework 
+- What built-in permissions classes DRF has
+- How to write custom permission classes
+- How to set permissions globally, per-view and on object level
+
+You can get the resulted source code of this tutorial on my [github page](https://github.com/semaphore8/Tutorials/tree/master/Django-REST-API-authentication-and-permissions/complete). 
+
+*P.S.* There are also several [third party packages](https://www.django-rest-framework.org/api-guide/permissions/#third-party-packages) providing permissions control for Django REST Framework in case you want to build more complex access rules to your project.
