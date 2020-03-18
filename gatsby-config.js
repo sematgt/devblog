@@ -56,14 +56,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-remark-autolink-headers`,
-      options: {
-        offsetY: `100`,
-        maintainCase: false,
-        removeAccents: true,
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Simon's dev blog`,
