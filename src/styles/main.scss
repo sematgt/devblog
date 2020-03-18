@@ -1,10 +1,10 @@
 //Fonts
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900|Roboto+Mono:300,400,500,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900|Roboto+Mono:400,600&display=swap');
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto|Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
 
 // Configuration
-@import 'base/variables.scss';
+@import 'base/colors.scss';
 @import 'base/mixins.scss';
 @import 'base/typography.scss';
 @import 'components/layout.scss';
@@ -12,5 +12,3 @@
 @import 'components/postslist.scss';
 @import 'templates/blog-post.scss';
 @import 'templates/page.scss';
-
-// Components

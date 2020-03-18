@@ -9,20 +9,12 @@ html {
     line-height: $line-height;
     :any-link{
         color: inherit;
-        // text-decoration: none;
-        // border-bottom: 4px solid #fcff2e;
     }
   }
   
 
 body {
     margin: 0px;
-}
-
-img {
-    width: auto !important;
-    margin: 0 auto !important;
-    max-width: 100%;
 }
 
 .header {
@@ -33,8 +25,6 @@ img {
 
 .body-wrapper {
     display: flex;
-    // flex-basis: 100vw*10/14;
-    // flex-basis: 10px;
     justify-content: center;
 }
 
@@ -79,15 +69,11 @@ img {
         flex-basis: 100vw*0.85 !important;
         min-width: unset !important;
         max-width: unset;
-        // img {
-        //     width: auto !important;
-        // }
     }
 }
 
 @include mobile-margin-breakpoint {
     .content {
-        // flex-basis: 100vw*0.92;
         flex-basis: 94%;
     }
 
@@ -101,7 +87,6 @@ img {
         font-size: $base-font-size*0.7;
     }
     .content {
-        // overflow: scroll;
         .post-preview {
             .post-preview-header-string {
                 flex-direction: column;

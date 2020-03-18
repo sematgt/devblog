@@ -14,12 +14,10 @@
 }
 
 .blog-post, .blog-page {
-  // font-size: $base-font-size*1.1;
      
       a {
         text-decoration: none;
         border-bottom: 4px solid #ffee00;
-        // padding-bottom: 1px;
         color: inherit;
         &:visited {
           color: inherit;
@@ -35,7 +33,7 @@
 }
 
 .post-subtitle {
-  font-family: $postlist-heading-font-family;
+  font-family: $headers-font-type;
   letter-spacing: 0.7px;
   font-weight: 400;
   font-size: 1.2rem;
@@ -44,7 +42,7 @@
 
 .blog-post {
   small {
-    font-size: #{$postlist-heading-font-size/2};
+    font-size: $base-font-size*0.8;
     font-weight: 400;
     opacity: 0.7;
     letter-spacing: 0.2px;
@@ -76,8 +74,8 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: $postlist-heading-font-family;
-  line-height: $postlist-heading-line-height*1.35;
+  font-family: $headers-font-type;
+  line-height: 2.8rem;
   color: rgba(0, 0, 0, (1-$headers-font-gray-value));
 }
 
@@ -98,7 +96,6 @@ h5 {
   ul,
   dl,
   table {
-    // font-size: 1rem;
     margin: 0 0 2rem;
   }
 }
@@ -109,24 +106,42 @@ hr {
 }
 
 blockquote {
-  border-left: 5px solid $color-body-heading;
+  border-left: 5px solid rgba(0, 0, 0, (1-$headers-font-gray-value));
   font-style: italic;
   padding-left: 1.2rem;
   margin-left: -1.6rem;
   opacity: 0.9;
-  // p {
-  //   font-size: #{$body-font-size*1} !important;
-  // }
 }
 
 ul,
 ol {
   padding-left: 0rem;
-  // margin-left: -1.5rem;
 }
 
 li {
   margin-block-end: 0.5rem;
+}
+
+ul {
+  list-style: none; 
+}
+
+ul li::before {
+  color: rgba(0, 0, 0, (1-$headers-font-gray-value));
+  content: "\2022";
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1.6rem; 
+  margin-left: -1.6rem; 
+}
+
+ol li {
+  padding-left: 0.5rem; 
+  margin-left: -0.5rem;
+}
+
+.anchor.before {
+  margin-left: -15px;
 }
 
 .gatsby-highlight {

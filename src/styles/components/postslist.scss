@@ -24,7 +24,7 @@
         
         .post-preview-header {
             // border: 1px solid black;
-            max-width: 554px;
+            max-width: 550px;
             font-family: $headers-font-type;
             font-weight: $headers-font-weight;
             font-size: $base-font-size*1.6;
@@ -50,19 +50,12 @@
         
         .post-preview-subtitle {
             // border: 1px solid black;
-            // border: 1px solid black;
             font-family: $headers-font-type;
-            // font-size: $body-font-size;
-            // line-height: $line-height;
         }
         
         .post-preview-tags {
-            // font: $tag-font;
             // border: 1px solid black;
             font-style: italic;
-            // line-height: $line-height;
-            // border: 1px solid black;
-    
     
             span.tags {
                 @include bolder;
@@ -94,14 +87,9 @@
         }
     }
     
-    
-
     .divider {
         border-bottom: 2px dotted #888;
         margin-top: 1.5rem;
     }
 
 }
-
-
-
