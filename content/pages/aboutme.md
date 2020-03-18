@@ -4,6 +4,8 @@ path: "/aboutme"
 template: "page"
 ---
 
+![../images/pages/aboutme/me_with_skis.jpg](../images/pages/aboutme/me_with_skis.jpg)
+
 Hi, I'm Simon, full-stack software engineer and writer.
 
 I've built my first web-page at 16 in Macromedia Dreamweaver. It was "A quantum physics in simple terms" educational site. I remember I used some random googled JavaScript scenarios for dynamic menus and my site was starting through VisualBasic app with drum'n'bass 😂. I had pretty much zero understanding of what's going on inside😊. Now when I got a Master's Degree in CS and went through some projects I have a little bit more knowledge about the insides of this thing called web application.
