@@ -22,7 +22,7 @@ Permissions are the first thing you need to know in order to make your REST API 
 
 ## Let`s start
 
-In Django REST Framework(DRF) permissions together with authentication and [throttling](<[https://www.django-rest-framework.org/api-guide/throttling/](https://www.django-rest-framework.org/api-guide/throttling/)>) determine whether a request to API should be granted or denied access.
+In Django REST Framework(DRF) permissions together with authentication and [throttling](https://www.django-rest-framework.org/api-guide/throttling/) determine whether a request to API should be granted or denied access.
 
 ## Permissions
 
