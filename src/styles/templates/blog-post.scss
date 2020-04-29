@@ -6,9 +6,10 @@
 .blog-post-container {
     .content {
         margin-left: 0;
-        flex-basis: 670px;
+        flex-basis: 770px;
+        max-width: 770px;
         .blog-post {
-          max-width: 670px;
+          max-width: 770px;
         }
     }
 }
