@@ -1,0 +1,118 @@
+---
+path: "/How-to-deploy-your-Django-application-to-Heroku"
+date: 2020-04-29
+title: "How to deploy your Django application to Heroku"
+subtitle: "A small and straightforward guide"
+tags: "Django"
+readtime: 10
+template: blogpost
+---
+
+Deploying a Django app to production for the first time is not the easiest thing in this world.
+
+In order to make this process more clear and less painful, I made this guide as small as possible to successfully deploy your app without losing the understanding of how it works.
+
+Here is the basic workflow of the Django web-application in production:
+
+**[user's web-browser]** <--> **[web-server]** <--> **[wsgi-server]** <--> **[your app's code]**
+
+## Let's roll 🚴‍♀️
+
+1. App prep
+
+   1. In your app's python environment install Gunicorn. It's a light-weight pure-Python WSGI(web server gateway interface)-server, a gateway between web-server and your application's code.
+
+      `pip install gunicorn`
+
+      Another WSGI-server's options you can get [here](https://docs.djangoproject.com/en/3.0/howto/deployment/wsgi/#how-to-deploy-with-wsgi)
+
+   2. There are several flavors to free host your Django app. The most popular nowadays are Amazon AWS, Pythonanywhere, and Heroku. Our choice today will be Heroku as it is specialized at web-apps and brings you an opportunity to deploy a production/dev/staging environment almost in a couple of clicks.
+
+      So let's pip install a utility that automatically configures your Django app to work with Heroku:
+
+      `pip install django-heroku`
+
+      import to your Django app's settings (`settings.py` in the default case):
+
+      `import django_heroku`
+
+      and activate Django-Heroku config at the end of the same settings-file:
+
+      `django_heroku.settings(locals())`
+
+   3. In your app's root folder create `runtime.txt` file with just one string, representing your Python's version `python-3.7.6`
+
+   4. Next, create `Procfile` in the same directory with the string declaring how to deploy your app
+
+      `web: gunicorn <project_name>.wsgi --log-file -`
+
+      where `<project_name>` is obviously your Django project's name
+
+   5. Now let's review our Django `settings.py` with ["security, performance, and operations in mind"](https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/).
+
+      - Make sure that your `SECRET_KEY` used in production isn't mentioned anywhere else and is not committed to a version control system.
+
+      - Set `DEBUG = False` and `ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]']`
+
+      - Explicitly set sensitive data cookies transmitting over HTTPS:
+
+        `CSRF_COOKIE_SECURE = True`
+
+        `SESSION_COOKIE_SECURE = True`
+
+      - Now you can run `python manage.py check --deploy` command and check if you can apply another security/performance tweaks, recommended by Django, to your app. These tweaks are different for each specific app.
+
+   6. Add `DEBUG_PROPAGATE_EXCEPTIONS = True` to `settings.py` to see Django's errors in Heroku logs
+
+2. Heroku setup
+
+   1. [Signup](https://signup.heroku.com/) to Heroku
+
+   2. [Download](https://git-scm.com/downloads)/install Git if you didn't have it already
+
+   3. [Download](https://devcenter.heroku.com/articles/heroku-cli#download-and-install)/install Heroku CLI (if path error then add to path manually)
+
+   4. After Heroku CLI setup opens new Terminal/Command Prompt window, go to your Django project's path and login to Heroku:
+
+      `heroku login`
+
+   5. If you didn't have a Git repository initialized in your Django project's root dir, initialize it:
+
+      - `git init`
+      - add `*.pyc` string to `.gitignore` file (create if you don't have it yet)
+      - `git add *`
+      - `git commit -m 'initial'`
+
+   6. Create your Heroku app `heroku create <app-name> --buildpack heroku/python` 
+
+      Your app's url will be something like this `https://<app-name>.herokuapp.com`
+
+      Git repo `https://git.heroku.com/<app-name>.git`
+
+      When you create an app, a Git remote (called `heroku`) is also created and associated with your local Git repository.
+
+   7. Deploy the app to Heroku: 
+
+      `git push heroku master`
+
+   8. Migrate the database:
+
+      `heroku run python manage.py migrate`
+
+   9. Create the superuser:
+
+      `heroku run python manage.py createsuperuser`
+
+   10. Optionally: if you have a *"Missing staticfiles manifest entry for 'favicon.ico'"* error on Django admin page bundle static files locally:
+
+       `python manage.py collectstatic`
+
+       add this to `settings.py`:
+
+       `STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'`
+
+       and push changes to Heroku:
+
+       `git push heroku master`
+
+   🎉Congratulations! 🍹Your app's web-debut had happened successfully!
