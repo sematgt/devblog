@@ -23,7 +23,7 @@ Here is the basic workflow of the Django web-application in production:
 1. In your app's python environment install Gunicorn. It's a light-weight pure-Python WSGI(web server gateway interface)-server, a gateway between web-server and your application's code.
 
 ```bash
-pip install gunicorn
+$ pip install gunicorn
 ```
 
 Another WSGI-server's options you can get [here](https://docs.djangoproject.com/en/3.0/howto/deployment/wsgi/#how-to-deploy-with-wsgi)
@@ -33,7 +33,7 @@ Another WSGI-server's options you can get [here](https://docs.djangoproject.com/
 So let's pip install a utility that automatically configures your Django app to work with Heroku:
 
 ```bash
-pip install django-heroku
+$ pip install django-heroku
 ```
 
 import to your Django app's settings (`settings.py` in the default case):
@@ -111,26 +111,26 @@ to `settings.py` to see Django's errors in Heroku logs
 4. After Heroku CLI setup opens new Terminal/Command Prompt window, go to your Django project's path and login to Heroku:
 
 ```bash
-heroku login
+$ heroku login
 ```
 
 5. If you didn't have a Git repository initialized in your Django project's root dir, initialize it:
 
 ```bash
-git init
+$ git init
 ```
 
 add `*.pyc` string to `.gitignore` file (create if you don't have it yet), commit changes to local repo:
 
 ```bash
-git add *
-git commit -m 'initial'
+$ git add *
+$ git commit -m 'initial'
 ```
 
 6. Create your Heroku app
 
 ```bash
-heroku create app-name --buildpack heroku/python
+$ heroku create app-name --buildpack heroku/python
 ```
 
 Your app's url will be something like this `https://app-name.herokuapp.com`
@@ -142,25 +142,25 @@ When you create an app, a Git remote (called `heroku`) is also created and assoc
 7. Deploy the app to Heroku:
 
 ```bash
-git push heroku master
+$ git push heroku master
 ```
 
 8. Migrate the database:
 
 ```bash
-heroku run python manage.py migrate
+$ heroku run python manage.py migrate
 ```
 
 9. Create the superuser:
 
 ```bash
-heroku run python manage.py createsuperuser
+$ heroku run python manage.py createsuperuser
 ```
 
 10. Optionally: if you have a *"Missing staticfiles manifest entry for 'favicon.ico'"* error on Django admin page bundle static files locally:
 
 ```bash
-python manage.py collectstatic
+$ python manage.py collectstatic
 ```
 
 add this to `settings.py`:
@@ -172,7 +172,13 @@ STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 and push changes to Heroku:
 
 ```bash
-git push heroku master
+$ git push heroku master
+```
+
+Now you can watch your app in the browser:
+
+```bash
+$ heroku open
 ```
 
 🎉 Congratulations! Your app's web-debut had happened successfully !🍹
