@@ -8,13 +8,13 @@ template: "page"
 
 Class schedule MVC single-page web-application with admin interface
 
-Built on: *Django REST Framework, React, JavaScript, MaterialUI*
+Built on: *Django, Django REST Framework, React, JavaScript, MaterialUI*
 
 [Demo](https://semaphore8.github.io/) [Source](https://github.com/semaphore8/schedule_nngu)
 
 ## 💻 My dev blog
 
-Blog-theme for Gatsby based on my personal page
+Blog-theme for Gatsby based on my personal page, Jamstack app
 
 Built on: *Gatsby, React, GraphQL, Sass*
 
