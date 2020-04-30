@@ -10,7 +10,7 @@ Class schedule MVC single-page web-application with admin interface
 
 Built on: *Django REST Framework, React, JavaScript, MaterialUI*
 
-[Source](https://github.com/semaphore8/schedule_nngu)
+[Demo](https://semaphore8.github.io/) [Source](https://github.com/semaphore8/schedule_nngu)
 
 ## 💻 My dev blog
 
