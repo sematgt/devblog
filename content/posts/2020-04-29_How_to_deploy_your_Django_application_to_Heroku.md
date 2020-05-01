@@ -129,8 +129,24 @@ $ git commit -m 'initial'
 
 6. Create your Heroku app
 
+First of all you have to choose the region where you want to deploy the app:
+
 ```bash
-$ heroku create app-name --buildpack heroku/python
+$ heroku regions
+ID         Location                 Runtime
+─────────  ───────────────────────  ──────────────
+eu         Europe                   Common Runtime
+us         United States            Common Runtime
+dublin     Dublin, Ireland          Private Spaces
+frankfurt  Frankfurt, Germany       Private Spaces
+oregon     Oregon, United States    Private Spaces
+sydney     Sydney, Australia        Private Spaces
+tokyo      Tokyo, Japan             Private Spaces
+virginia   Virginia, United States  Private Spaces
+```
+
+```bash
+$ heroku create app-name --region eu --buildpack heroku/python
 ```
 
 Your app's url will be something like this `https://app-name.herokuapp.com`
