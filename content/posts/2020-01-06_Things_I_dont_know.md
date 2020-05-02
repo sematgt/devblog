@@ -8,6 +8,8 @@ readtime: 3
 template: blogpost
 ---
 
+![books](../images/posts/3/nick-fewings-f2Bi-VBs71M-unsplash.jpg "Photo by [Debby Hudson](https://unsplash.com/@hudsoncrafted?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/books?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)")
+
 ## Introduction
 
 > «Any man can do what another man has done»
@@ -20,10 +22,23 @@ This autumn I've decided to commit to the ["Learn in public"](https://www.swyx.i
 
 ## To-do plan
 
+### JavaScript
+
+- ~~Basic JavaScript~~
+- Advanced JavaScript
+- ~~React~~
+- Redux
+- ~~MaterialUI~~
+- Advanced React
+- Node.js crash course
+- async/await promises js, browser eventloop
+- js events, function call apply
+- ecma6
+- Node js + next js
+
 ### Python
 
 - ~~"Learning Python" Mark Lutz~~
-
 - "Programming Python" Mark Lutz
 - ~~Django~~
 - ~~Django REST Framework~~
@@ -55,33 +70,25 @@ This autumn I've decided to commit to the ["Learn in public"](https://www.swyx.i
 - ~~Adobe XD~~
 - Animation
 - Basic Illustrations
-- UX Basics
+- ~~UX Basics~~
 
 ### Networking
 
 - Sockets
-
-### JavaScript
-
-- ~~Basic JavaScript~~
-- Advanced JavaScript
-- ~~React~~
-- Redux
-- ~~MaterialUI~~
-- Advanced React
-- Node.js crash course
 
 ### Product Management
 
 - ~~OKRs, SMART~~
 - ~~Customer Journey Map, User Flow~~
 - ~~Jobs To Be Done~~
-- User Story, Job Story
+- ~~User Story, Job Story~~
 - Scrum, Kanbun, Less, Agile
 - ~~Lean Startup principles~~
 - ~~Basic Analytics~~
 - Basic Marketing
-- Basics Researching
+- ~~Basics Researching~~
+- ~~MVP~~
+- ~~Design Sprint~~
 
 ### IoT
 
@@ -94,7 +101,7 @@ This autumn I've decided to commit to the ["Learn in public"](https://www.swyx.i
 ### Versioning
 
 - ~~Git 101~~
-- Advanced Git
+- ~~Advanced Git~~
 - ~~Mercurial~~
 - ~~SVN~~
 
@@ -119,4 +126,3 @@ This autumn I've decided to commit to the ["Learn in public"](https://www.swyx.i
 - TDD Python
 - ~~Selenium~~
 - JS testing
-

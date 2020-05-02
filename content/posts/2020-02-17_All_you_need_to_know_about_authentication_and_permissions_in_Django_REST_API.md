@@ -8,6 +8,8 @@ readtime: 12
 template: blogpost
 ---
 
+![closed](../images/posts/1/ross-stone-G6dbyxMR9pA-unsplash.jpg "Photo by [Ross Stone](https://unsplash.com/@rs2photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/closed-road?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)")
+
 Permissions are the first thing you need to know in order to make your REST API secure and well protected. After this tutorial, you will realize that it's not that hard.
 
 ## Goals

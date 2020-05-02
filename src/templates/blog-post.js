@@ -21,7 +21,14 @@ export default function Template({ data }) {
           <div className="blog-heading">
             <h1>{post.frontmatter.title}</h1>
             <div className="post-subtitle">{post.frontmatter.subtitle}</div>
-            <small>{post.frontmatter.readtime} mins read</small>
+            <div className="post-timestring">
+              <div>
+                <small>Posted on {post.frontmatter.date} {post.frontmatter.edited && <span>Edited on {post.frontmatter.edited.slice(0,10)}</span>}</small>
+              </div>
+              <div>
+                <small><i>{post.frontmatter.readtime} mins read</i></small>
+              </div>
+            </div>
             <hr />
           </div>
           <div
@@ -46,6 +53,7 @@ export const pageQuery = graphql`
         subtitle
         tags
         readtime
+        edited
       }
     }
   }

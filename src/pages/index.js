@@ -30,7 +30,6 @@ class Index extends React.Component {
   render() {
     const tag = this.state.tag;
     const [ posts, filtered ] = this.filterPosts(tag);
-    console.log(filtered);
     return (
       <Layout sidebar="on" handleClick={this.handleClick}>
         <Helmet title={`${config.siteTitle}`} />

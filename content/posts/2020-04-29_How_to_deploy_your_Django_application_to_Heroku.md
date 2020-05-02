@@ -6,7 +6,10 @@ subtitle: "A small and straightforward guide"
 tags: "Django"
 readtime: 10
 template: blogpost
+edited: 2020-05-01
 ---
+
+![Featured photo](../images/posts/2/pero-kalimero-9BJRGlqoIUk-unsplash.jpg "Photo by [Pero Kalimero](https://unsplash.com/@pericakalimerica?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/cloud?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)")
 
 Deploying a Django app to production for the first time is not the easiest thing in this world.
 

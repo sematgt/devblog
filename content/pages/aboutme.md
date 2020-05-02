@@ -24,6 +24,7 @@ My current setup is pretty simple:
 - Samsung SA650 monitor
 - Ikea desk
 - Some random mouse and keyboard
+- VSCode
 
 ## Soundcloud
 
