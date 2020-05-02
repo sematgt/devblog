@@ -31,8 +31,3 @@ function Routing(props) {
 
 ReactDOM.render(<Routing/>, document.getElementById('root'));
 ```
-
-
-
-
-
