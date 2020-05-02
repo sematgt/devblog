@@ -1,8 +1,8 @@
 ---
-path: "/Using-React-Router-in-index.js"
+path: "/Using-React-Router-with-create-react-app"
 date: 2020-05-02
-title: "Using React Router in index.js"
-subtitle: "With create-react-app"
+title: "Using React Router with create-react-app"
+subtitle: "Simplify your code"
 tags: "React"
 readtime: 3
 template: blogpost
