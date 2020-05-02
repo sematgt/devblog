@@ -1,6 +1,6 @@
 .blog-heading {
   margin-block-start: 1rem;
-  margin-block-end: 2rem;
+  margin-block-end: 1.5rem;
 }
 
 .blog-post-container {
@@ -38,7 +38,7 @@
   letter-spacing: 0.7px;
   font-weight: 400;
   font-size: 1.2rem;
-  margin-block-end: 1rem;
+  // margin-block-end: 1rem;
 }
 
 .blog-post {
@@ -52,6 +52,7 @@
 
 h1 {
   font-size: $h1;
+
 }
 
 h2 {
@@ -82,6 +83,9 @@ h5 {
 
 h1 {
   font-weight: 900;
+  line-height: 3.3rem;
+  margin-block-start: 1.5rem;
+  margin-block-end: 1rem;
 }  
 h2,
 h3,
@@ -97,13 +101,13 @@ h5 {
   ul,
   dl,
   table {
-    margin: 0 0 2rem;
+    margin: 0 0 1.25rem;
   }
 }
 
 hr {
   margin-block-start: 1em;
-    margin-block-end: 0em;
+  margin-block-end: 0em;
 }
 
 blockquote {
@@ -117,10 +121,6 @@ blockquote {
 ul,
 ol {
   padding-left: 0rem;
-}
-
-li {
-  margin-block-end: 0.5rem;
 }
 
 ul {
