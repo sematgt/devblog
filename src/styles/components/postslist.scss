@@ -88,6 +88,10 @@
                     color: $react;
                     background: $react-bg;
             }
+            span[data-tag="Gatsby"] {
+                    color: $gatsby;
+                    background: $gatsby-bg;
+            }
         }
     }
     
