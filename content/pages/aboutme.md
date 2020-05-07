@@ -16,7 +16,7 @@ It's been a while. Since then I had received a Master's Degree in CS and managed
 
 Now besides my full-time job as a DevOps & QA engineer, I learn full-stack web development and write [open-source](https://github.com/semaphore8) code in my spare time.
 
-I believe that documenting and sharing new knowledge helps to understand deeper the things you've researched. I'll be very happy knowing if someone has found his problem's solution in my posts.
+I believe that documenting and sharing new knowledge helps to understand deeper the things you've researched. I'll be very happy knowing if someone would find his problem's solution in my posts.
 
 🙌 This blog is inspired by [Kalle Hallden's](https://www.youtube.com/channel/UCWr0mx597DnSGLFk1WfvSkQ/channels), [Tania Rascia's](https://www.taniarascia.com/)  and [Flavio Copes's](https://flaviocopes.com/) works.
 
