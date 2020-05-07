@@ -6,6 +6,7 @@ subtitle: "Simplify your code"
 tags: "React"
 readtime: 3
 template: blogpost
+tableOfContents: false
 ---
 
 One of the obvious advantages of React Router (v4 and higher) comparing to other web-app frameworks routers is the freedom of implementation. React Router developers call it ["Dynamic Routing"](https://reacttraining.com/react-router/web/guides/philosophy). Since React Router is basically a bunch of React components, we can initialize and configure them anywhere in our app.

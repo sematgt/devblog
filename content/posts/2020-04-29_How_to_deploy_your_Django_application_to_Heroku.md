@@ -7,6 +7,7 @@ tags: "Django"
 readtime: 10
 template: blogpost
 edited: 2020-05-01
+tableOfContents: true
 ---
 
 ![Featured photo](../images/posts/2/pero-kalimero-9BJRGlqoIUk-unsplash.jpg "Photo by [Pero Kalimero](https://unsplash.com/@pericakalimerica?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/cloud?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)")
@@ -19,9 +20,9 @@ Here is the basic workflow of the Django web-application in production:
 
 **[user's web-browser]** <--> **[web-server]** <--> **[wsgi-server]** <--> **[your app's code]**
 
-## Let's roll 🚴‍♀️
+*Let's roll 🚴‍♀️*
 
-### App prep
+## App prep
 
 1. In your app's python environment install Gunicorn. It's a light-weight pure-Python WSGI(web server gateway interface)-server, a gateway between web-server and your application's code.
 
@@ -103,7 +104,7 @@ DEBUG_PROPAGATE_EXCEPTIONS = True
 
 to `settings.py` to see Django's errors in Heroku logs
 
-### Heroku setup
+## Heroku setup
 
 1. [Signup](https://signup.heroku.com/) to Heroku
 

@@ -31,6 +31,13 @@ export default function Template({ data }) {
             </div>
             <hr />
           </div>
+          { 
+            post.frontmatter.tableOfContents === true &&
+            <>
+            <h2>Table of contents</h2>
+            <div dangerouslySetInnerHTML={{__html: post.tableOfContents }} className="table-of-contents"/>
+            </>
+          }
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: post.html }}
@@ -46,6 +53,11 @@ export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
+      tableOfContents(
+        absolute: true
+        pathToSlugField: "frontmatter.path"
+        maxDepth: 2
+      )
       frontmatter {
         date(formatString: "YYYY-MM-DD")
         path
@@ -54,6 +66,7 @@ export const pageQuery = graphql`
         tags
         readtime
         edited
+        tableOfContents
       }
     }
   }

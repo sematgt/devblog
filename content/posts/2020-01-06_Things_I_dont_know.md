@@ -6,6 +6,7 @@ subtitle: "As a software engineer"
 tags: "Blog"
 readtime: 3
 template: blogpost
+tableOfContents: false
 ---
 
 ![books](../images/posts/3/debby-hudson-asviIGR3CPE-unsplash.jpg "Photo by [Debby Hudson](https://unsplash.com/@hudsoncrafted?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/books?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)")

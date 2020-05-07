@@ -6,6 +6,7 @@ subtitle: "With gatsby-remark-images plugin"
 tags: "Gatsby"
 readtime: 5
 template: blogpost
+tableOfContents: true
 ---
 
 ## Initialize

@@ -33,6 +33,28 @@
       }
 }
 
+.table-of-contents {
+  a {
+        text-decoration: none;
+        border-bottom: 2px solid #ffee00;
+        color: inherit;
+        &:visited {
+          color: inherit;
+        }
+        &:hover {
+          background-color: $color-hover;
+          }
+        }
+      
+      a.anchor.before {
+        border-bottom: none;
+      }
+
+  ul li::before {
+    display: none;
+  }
+}
+
 .post-subtitle {
   font-family: $headers-font-type;
   letter-spacing: 0.7px;
