@@ -71,7 +71,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#fff`,
-        icon: `public/logos/icon.png`,
+        icon: `content/thumbnails/icon.png`,
       },
     },
     "gatsby-image",
