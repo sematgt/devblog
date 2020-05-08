@@ -2,7 +2,7 @@
 path: "/How-to-use-image-title-in-Gatsby-markdown"
 date: 2020-05-07
 title: "How to use image title in Gatsby Markdown"
-subtitle: "With gatsby-remark-images plugin"
+subtitle: "With the gatsby-remark-images plugin"
 tags: "Gatsby"
 readtime: 5
 template: blogpost
