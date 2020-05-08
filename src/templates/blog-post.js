@@ -4,9 +4,11 @@ import Layout from "../components/layout"
 import Footer from "../components/footer"
 import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data
+  if (post.frontmatter.postImage) {var featuredImage = post.frontmatter.postImage.url.childImageSharp.fluid}
   return (
     <div className="blog-post-container">
       <Helmet title={`${post.frontmatter.title} - ${config.siteTitle} `} />
@@ -31,6 +33,15 @@ export default function Template({ data }) {
             </div>
             <hr />
           </div>
+          {
+            post.frontmatter.postImage &&
+            <figure>
+              <Img fluid={featuredImage} />
+              <figcaption>
+                Photo by <a href={post.frontmatter.postImage.creds.author.url} id="author" target="_blank" rel="noopener noreferrer">{post.frontmatter.postImage.creds.author.name}</a> on <a href={post.frontmatter.postImage.creds.source.url} id="source" target="_blank" rel="noopener noreferrer">{post.frontmatter.postImage.creds.source.name}</a>
+              </figcaption>
+            </figure>
+          }
           { 
             post.frontmatter.tableOfContents === true &&
             <>
@@ -67,6 +78,26 @@ export const pageQuery = graphql`
         readtime
         edited
         tableOfContents
+        postImage {
+          alt
+          creds {
+            author {
+              name
+              url
+            }
+            source {
+              name
+              url
+            }
+          }
+          url {
+            childImageSharp {
+              fluid(maxWidth: 1440) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
       }
     }
   }

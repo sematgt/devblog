@@ -7,9 +7,21 @@ tags: "Blog"
 readtime: 3
 template: blogpost
 tableOfContents: false
+postImage: {
+   alt: "books",
+   url: "../images/posts/3/debby-hudson-asviIGR3CPE-unsplash.jpg",
+   creds: {
+      author: {
+        name: "Debby Hudson",
+        url: "https://unsplash.com/@hudsoncrafted?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+      },
+      source: {
+         name: "Unsplash",
+         url: "https://unsplash.com/s/photos/books?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
+      }
+   } 
+}
 ---
-
-![books](../images/posts/3/debby-hudson-asviIGR3CPE-unsplash.jpg "Photo by [Debby Hudson](https://unsplash.com/@hudsoncrafted?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/books?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)")
 
 ## Introduction
 

@@ -74,5 +74,7 @@ module.exports = {
         icon: `static/logos/favicon.ico`,
       },
     },
+    "gatsby-image",
+    "gatsby-transformer-sharp",
   ],
 }
