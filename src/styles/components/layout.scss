@@ -70,15 +70,22 @@ figure {
 }
 
 @include mobile-breakpoint {
-    .menu {
-        display: none;
+    .body-wrapper {
+        flex-direction: column;
+        max-width: 100vw*0.85;
+        margin: auto;
     }
-
+    
+    .menu {
+        max-width: none;
+        order: 2;
+    }
+    
     .content {
+        order: 1;
         margin-left: 0px !important;
-        flex-basis: 100vw*0.85 !important;
+        // flex-basis: 100vw*0.85 !important;
         min-width: unset !important;
-        max-width: unset;
     }
 }
 
@@ -111,6 +118,10 @@ figure {
 @include mobile-xsmall-breakpoint {
     html {
         font-size: $base-font-size*0.5;
+    }
+    
+    .navigation, .hiwords, .newsletter {
+        max-width: 85vw;
     }
 
 }
