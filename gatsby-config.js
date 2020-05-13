@@ -77,5 +77,11 @@ module.exports = {
     },
     "gatsby-image",
     "gatsby-transformer-sharp",
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-166347675-1",
+      },
+    },
   ],
 }
