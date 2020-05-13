@@ -26,7 +26,7 @@ Built on: *Gatsby, React, GraphQL, Sass*
 
 PrismJS theme based on "okaidia"
 
-![mokaidia](../images/pages/projects/mokaidia.png)
+![mokaidia-preview](../images/pages/projects/mokaidia.png)
 
 Built on: *CSS*
 

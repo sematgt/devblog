@@ -3,6 +3,7 @@ import config from "../../data/SiteConfig"
 import Layout from '../components/layout'
 import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
+import SEO from "../components/seo"
 
 export default function Template ({
     data,
@@ -11,6 +12,7 @@ export default function Template ({
     return (
         <div className="blog-page-container">
             <Helmet title={`${page.frontmatter.title} - ${config.siteTitle}`} />
+            <SEO />
             <Layout sidebar="off">
               <div className="blog-page">
                   <Link to="/">Main page <span role="img" aria-label="home">🏡</span></Link>

@@ -5,6 +5,8 @@ import Footer from "../components/footer"
 import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
+import SEO from "../components/seo"
+
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data
@@ -12,6 +14,7 @@ export default function Template({ data }) {
   return (
     <div className="blog-post-container">
       <Helmet title={`${post.frontmatter.title} - ${config.siteTitle} `} />
+      <SEO />
       <Layout sidebar="off">
         <div className="blog-post">
           <Link to="/">

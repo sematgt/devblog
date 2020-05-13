@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import config from "../../data/SiteConfig"
 import Postslist from "../components/postslist"
-
+import SEO from "../components/seo"
 
 class Index extends React.Component {
   constructor(props, data) {
@@ -33,6 +33,7 @@ class Index extends React.Component {
     return (
       <Layout sidebar="on" handleClick={this.handleClick}>
         <Helmet title={`${config.siteTitle}`} />
+        <SEO />
         <Postslist posts={posts} filtered={filtered} handleClick={this.handleClick}/>
       </Layout>
   )
