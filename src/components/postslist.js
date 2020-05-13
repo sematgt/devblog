@@ -6,7 +6,7 @@ export default (props) => (
     {   
         props.filtered === true &&
         <div className="filtered">
-            <Link to={"/"} onClick={() => {props.handleClick()}}><span role="img" aria-label="back">🔙 </span>All tags</Link>
+            <Link to={"/"} onClick={() => {props.handleClick()}}><span role="img" aria-label="back">🔙 </span><span className="screen-reader-text">Link to all tags posts</span>All tags</Link>
             <span> Posts on {props.posts["0"].node.frontmatter.tags} <span role="img" aria-label="arrow">⤵️</span></span>
         </div>
     }
@@ -16,6 +16,7 @@ export default (props) => (
           return (
             <React.Fragment key={post.id}>
             <Link className="postlink" to={post.frontmatter.path} key={post.id}>
+            <span className="screen-reader-text">Link to {post.frontmatter.title} post</span>
             <div className="post-preview">
                 <div className="post-preview-header-string">
                     <div className="post-preview-header">

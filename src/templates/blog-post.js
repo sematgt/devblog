@@ -18,6 +18,7 @@ export default function Template({ data }) {
       <Layout sidebar="off">
         <div className="blog-post">
           <Link to="/">
+          <span className="screen-reader-text">Link to main page</span>
             Main page{" "}
             <span role="img" aria-label="home">
               🏡

@@ -15,7 +15,7 @@ export default function Template ({
             <SEO />
             <Layout sidebar="off">
               <div className="blog-page">
-                  <Link to="/">Main page <span role="img" aria-label="home">🏡</span></Link>
+                  <Link to="/"><span className="screen-reader-text">Link to main page</span>Main page <span role="img" aria-label="home">🏡</span></Link>
                   <h1>{page.frontmatter.title}</h1>
                   <div 
                       className="blog-page-content"
