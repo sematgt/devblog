@@ -37,6 +37,7 @@ module.exports = {
               markdownCaptions: true
             },
           },
+          `gatsby-remark-copy-linked-files`,
           {
             resolve: `gatsby-remark-autolink-headers`,
             options: {

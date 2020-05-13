@@ -4,3 +4,17 @@
         flex-basis: 670px;
     }
 }
+
+.blog-page {
+    img {
+        max-width: 670px;
+    }
+}
+
+@include mobile-breakpoint {
+    .blog-page {
+        img {
+            max-width: 100vw*0.85;
+        }
+    }
+}

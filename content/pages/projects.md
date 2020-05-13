@@ -8,9 +8,9 @@ template: "page"
 
 Class schedule MVC single-page web-application with admin interface
 
-Built on: *Django, Django REST Framework, React, JavaScript, MaterialUI*
-
 ![demo](../images/pages/projects/schedule-demo.gif)
+
+Built on: *Django, Django REST Framework, React, JavaScript, MaterialUI*
 
 [Demo](https://semaphore8.github.io/) [Source](https://github.com/semaphore8/schedule_nngu)
 
@@ -25,6 +25,8 @@ Built on: *Gatsby, React, GraphQL, Sass*
 ## 🎨 Mokaidia
 
 PrismJS theme based on "okaidia"
+
+![mokaidia](../images/pages/projects/mokaidia.png)
 
 Built on: *CSS*
 
