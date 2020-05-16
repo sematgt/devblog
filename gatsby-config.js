@@ -1,5 +1,11 @@
+const config = require('./data/SiteConfig')
+
 module.exports = {
+  siteMetadata: {
+    siteUrl: config.siteUrl,
+  },
   plugins: [
+    `gatsby-plugin-sitemap`,
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
     "gatsby-plugin-sharp",
