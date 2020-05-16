@@ -22,7 +22,22 @@ postImage: {
       }
    } 
 }
-postType: "Article"
+postType: "HowTo"
+steps: [
+   {
+      "text": "Install WSGI-server",
+   }, {
+      "text": "pip install django-heroku",
+   }, {
+      "text": "Prepare django settings",
+   }, {
+      "text": "Register/login on Heroku",
+   }, {
+      "text": "Start your Heroku app 🎉",
+   }, {
+      "text": "(optionally) Migrate your database",
+   }
+]
 ---
 
 ## Intro

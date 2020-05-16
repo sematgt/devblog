@@ -33,29 +33,32 @@ export default function SEO(props) {
       }
       let postURL = urljoin(config.siteUrl, replacePath(postPath))
 
+      // BreadscrumbList type
+      schemaOrgJSONLD.push(
+        {
+          '@context': 'http://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              item: {
+                '@id': postURL,
+                name: postNode.frontmatter.title,
+                image,
+              },
+            },
+          ],
+        },
+      )
 
       // Article type
       if (postType === 'Article') {
         schemaOrgJSONLD.push(
           {
             '@context': 'http://schema.org',
-            '@type': 'BreadcrumbList',
-            itemListElement: [
-              {
-                '@type': 'ListItem',
-                position: 1,
-                item: {
-                  '@id': postURL,
-                  name: postNode.frontmatter.title,
-                  image,
-                },
-              },
-            ],
-          },
-          {
-            '@context': 'http://schema.org',
             '@type': 'BlogPosting',
-            url: config.siteUrl,
+            url: postURL,
             name: postNode.frontmatter.title,
             alternateName: config.siteTitleAlt ? config.siteTitleAlt : '',
             headline: postNode.frontmatter.title,
@@ -66,12 +69,35 @@ export default function SEO(props) {
             description: postNode.frontmatter.subtitle,
             dateModified: dateModified,
             datePublished: datePublished,
-          }
+          },
         )
       }
   
       // HowTo type
-
+      if (postType === 'HowTo') {
+        let steps = []
+        postNode.frontmatter.steps.forEach(step => steps.push({'@type': 'HowToStep', 'text': step.text}))
+        schemaOrgJSONLD.push(
+          {
+            '@context': 'http://schema.org',
+            '@type': 'HowTo',
+            url: postURL,
+            name: postNode.frontmatter.title,
+            alternateName: config.siteTitleAlt ? config.siteTitleAlt : '',
+            headline: postNode.frontmatter.title,
+            image: {
+              '@type': 'ImageObject',
+              url: image,
+            },
+            description: postNode.frontmatter.subtitle,
+            dateModified: dateModified,
+            datePublished: datePublished,
+            step: steps,
+            estimatedCost: 'zero',
+            totalTime: 'PT' + postNode.frontmatter.readtime + 'M',
+          },
+        )
+      }
     }
 
     return(

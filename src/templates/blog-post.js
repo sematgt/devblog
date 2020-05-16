@@ -109,6 +109,9 @@ export const pageQuery = graphql`
           }
         }
         postType
+        steps{
+          text 
+        }
       }
     }
     file(relativePath: {eq: "icon.png"}) {

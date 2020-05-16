@@ -8,6 +8,17 @@ readtime: 5
 template: blogpost
 tableOfContents: true
 postType: "Article"
+steps: [
+   {
+      "text": "Initialize gatsby-remark-images plugin",
+   }, {
+      "text": "Pass the title text in double quotes as a second argument to markdown image element",
+   }, {
+      "text": "Beware of possible pitfalls",
+   }, {
+      "text": "Style your images 💅",
+   }
+]
 ---
 
 ## Initialize
