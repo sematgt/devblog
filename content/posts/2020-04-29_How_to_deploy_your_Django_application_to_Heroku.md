@@ -22,6 +22,7 @@ postImage: {
       }
    } 
 }
+postType: "Article"
 ---
 
 ## Intro

@@ -21,6 +21,7 @@ postImage: {
       }
    } 
 }
+postType: "Article"
 ---
 
 Permissions are the first thing you need to know in order to make your REST API secure and well protected. After this tutorial, you will realize that it's not that hard.

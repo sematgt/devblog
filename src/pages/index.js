@@ -30,10 +30,11 @@ class Index extends React.Component {
   render() {
     const tag = this.state.tag;
     const [ posts, filtered ] = this.filterPosts(tag);
+    const iconNode = this.props.data.file
     return (
       <Layout sidebar="on" handleClick={this.handleClick}>
         <Helmet title={`${config.siteTitle}`} />
-        <SEO />
+        <SEO iconNode={iconNode}/>
         <Postslist posts={posts} filtered={filtered} handleClick={this.handleClick}/>
       </Layout>
   )
@@ -54,6 +55,13 @@ query IndexQuery {
           date(formatString: "YYYY-MM-DD")
         }
       id
+      }
+    }
+  }
+  file(relativePath: {eq: "icon.png"}) {
+    childImageSharp {
+      fixed(height: 150, width: 150) {
+        ...GatsbyImageSharpFixed
       }
     }
   }

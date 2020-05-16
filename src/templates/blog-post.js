@@ -8,13 +8,16 @@ import Img from "gatsby-image"
 import SEO from "../components/seo"
 
 
-export default function Template({ data }) {
+export default function Template({ data, pageContext }) {
+  const { slug } = pageContext
+  const postNode = data.markdownRemark
+  const iconNode = data.file
   const { markdownRemark: post } = data
   if (post.frontmatter.postImage) {var featuredImage = post.frontmatter.postImage.url.childImageSharp.fluid}
   return (
     <div className="blog-post-container">
       <Helmet title={`${post.frontmatter.title} - ${config.siteTitle} `} />
-      <SEO />
+      <SEO postNode={postNode} postPath={slug} postType={post.frontmatter.postType} iconNode={iconNode}/>
       <Layout sidebar="off">
         <div className="blog-post">
           <Link to="/">
@@ -99,8 +102,19 @@ export const pageQuery = graphql`
               fluid(maxWidth: 1440) {
                 ...GatsbyImageSharpFluid
               }
+              fixed(width: 150, height: 150) {
+                ...GatsbyImageSharpFixed
+              }
             }
           }
+        }
+        postType
+      }
+    }
+    file(relativePath: {eq: "icon.png"}) {
+      childImageSharp {
+        fixed(height: 150, width: 150) {
+          ...GatsbyImageSharpFixed
         }
       }
     }

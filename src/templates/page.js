@@ -9,10 +9,11 @@ export default function Template ({
     data,
 }) {
     const { markdownRemark: page } = data
+    const iconNode = data.file
     return (
         <div className="blog-page-container">
             <Helmet title={`${page.frontmatter.title} - ${config.siteTitle}`} />
-            <SEO />
+            <SEO iconNode={iconNode}/>
             <Layout sidebar="off">
               <div className="blog-page">
                   <Link to="/"><span className="screen-reader-text">Link to main page</span>Main page <span role="img" aria-label="home">🏡</span></Link>
@@ -33,6 +34,13 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
+      }
+    }
+    file(relativePath: {eq: "icon.png"}) {
+      childImageSharp {
+        fixed(height: 150, width: 150) {
+          ...GatsbyImageSharpFixed
+        }
       }
     }
   }

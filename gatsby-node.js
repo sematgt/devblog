@@ -29,13 +29,17 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     createPage({
       path: node.frontmatter.path,
       component: blogPostTemplate,
-      context: {}, // additional data can be passed via context
+      context: {
+        slug: node.frontmatter.path,
+      },
     })}
     if (node.frontmatter.template === "page") {
     createPage({
       path: node.frontmatter.path,
       component: pageTemplate,
-      context: {}, // additional data can be passed via context
+      context: {
+        slug: node.frontmatter.path,
+      },
     })}
   })
 }
