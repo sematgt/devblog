@@ -6,13 +6,11 @@ template: "page"
 
 ![../images/pages/aboutme/me_and_skis.jpg](../images/pages/aboutme/me_and_skis.jpg)
 
-👋 Hi, I'm Simon, full-stack software engineer and writer.
+👋 Hi, I'm Simon, full-stack software engineer and technical writer.
 
 I've built my first web-page at 16 in Macromedia Dreamweaver. It was "A quantum physics in simple terms" site. I remember I used some random googled JavaScript scenarios for dynamic menus and my site was starting through VisualBasic desktop app with drum'n'bass 😂. I had pretty much zero understanding of what's going on inside😊.
 
-It's been a while.
-
-Since then I had received a Master's Degree in CS and managed to work in various positions: from a carwash worker to a chef's assistant in the restaurant, from a laboratory assistant to an engineer in the software development company.
+Since then I had received a Master's Degree in CS and managed to work in various positions: from a carwash worker to a chef's assistant in the restaurant, from a laboratory worker to an engineer in the software development company.
 
 📚 I've always been a big fan of [learning](https://www.simonbliznyuk.com/things-i-dont-know) new technologies and discovering how things work.
 
