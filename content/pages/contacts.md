@@ -13,3 +13,5 @@ template: "page"
 ✍ Twitter: [simonbliznyuk](https://twitter.com/simonbliznyuk)
 
 🤑 Ko-Fi: [simonb](https://ko-fi.com/simonb)
+
+✨ Facebook: [sgbliznyuk](https://www.facebook.com/sgbliznyuk)
