@@ -45,7 +45,7 @@ This autumn I've decided to commit to the ["Learn in public"](https://www.swyx.i
 - ~~MaterialUI~~
 - Advanced React
 - Node.js crash course
-- async/await promises js, browser eventloop
+- ~~async/await promises js, browser eventloop~~
 - js events, function call apply
 - ecma6
 - Node js + next js
@@ -118,6 +118,7 @@ This autumn I've decided to commit to the ["Learn in public"](https://www.swyx.i
 - ~~Advanced Git~~
 - ~~Mercurial~~
 - ~~SVN~~
+- ~~Big files in repos~~
 
 ### OS, CLI
 
@@ -125,7 +126,7 @@ This autumn I've decided to commit to the ["Learn in public"](https://www.swyx.i
 - ~~cmd.exe~~
 - ~~PowerShell 101~~
 - ~~Linux core knowledge~~
-- regex
+- ~~regex~~
 
 ### CSS
 
