@@ -7,7 +7,7 @@ tags: "Gatsby"
 readtime: 5
 template: blogpost
 tableOfContents: true
-postType: "Article"
+postType: "HowTo"
 steps: [
    {
       "text": "Initialize gatsby-remark-images plugin",
