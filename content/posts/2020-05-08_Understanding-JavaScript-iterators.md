@@ -121,10 +121,10 @@ class GroupIterator {
 
 As you can see the `next()` method starts to iterate with the zero-index element and works on the algorithm below:
 
-1. Check, if current index is last, then end of the iteration
-2. Refresh the returning value by the current index number
-3. Calculate an index for the next method call (adjust by 1)
-4. Return the value
+- **1 stage** Check, if current index is last, then end of the iteration
+- **2 stage** Refresh the returning value by the current index number
+- **3 stage** Calculate an index for the next method call (adjust by 1)
+- **4 stage** Return the value
 
 By this *CRCR* algorithm, you can write an iterator to an any object or a class.
 
