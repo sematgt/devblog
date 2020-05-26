@@ -52,6 +52,10 @@ pre[class*="language-"] {
 	font-size: 0.95rem;
 }
 
+h1 code[class="language-text"], h2 code[class="language-text"], h3 code[class="language-text"], h4 code[class="language-text"], h5 code[class="language-text"] {
+	font-size: 1.3rem;
+}
+
 .token.comment,
 .token.prolog,
 .token.doctype,
