@@ -26,7 +26,7 @@ postType: "Article"
 
 ## Introduction
 
-A CPU is the main device executing computer programs. The faster a CPU handles all code instructions the faster our program runs. 
+CPU is the main device executing computer programs. The faster it handles code instructions the faster our program runs.
 
 Sometimes our code needs to exchange data over the network or to read files from the disk storage. In this case the lower will be a network communication rate the bigger will be our CPU idle time and the slower our program will execute.
 
