@@ -6,17 +6,17 @@ template: "page"
 
 ![../images/pages/aboutme/me_and_skis.jpg](../images/pages/aboutme/me_and_skis.jpg)
 
-👋 Hi, I'm Simon, full-stack software engineer and technical writer.
+👋 Hi, I'm Simon, a full-stack software engineer and a technical writer.
 
-I've built my first web-page at 16 in Macromedia Dreamweaver. It was "A quantum physics in simple terms" site. I remember I used some random googled JavaScript scenarios for dynamic menus and my site was starting through VisualBasic desktop app with drum'n'bass 😂. I had pretty much zero understanding of what's going on inside😊.
+I've built my first web-page at 16 in Macromedia Dreamweaver. It was the "Quantum physics in simple terms" site. I remember that I've used some random googled JavaScript scenarios for dynamic menus and my site was starting through the VisualBasic desktop app with a drum'n'bass music 😂. I had pretty much zero understanding of what's going on inside😊.
 
 Since then I had received a Master's Degree in CS and managed to work in various positions: from a carwash worker to a chef's assistant in the restaurant, from a laboratory worker to an engineer in the software development company.
 
 📚 I've always been a big fan of [learning](https://www.simonbliznyuk.com/things-i-dont-know) new technologies and discovering how things work.
 
-Now besides my full-time job as a DevOps & QA engineer, I learn full-stack web development and write [open-source](https://github.com/semaphore8) code in my spare time.
+Now besides my full-time job as a DevOps & QA engineer, I learn full-stack web development and write an [open-source](https://github.com/semaphore8) code in my spare time.
 
-I believe that documenting and sharing new knowledge helps to understand deeper the things you've researched. So I try to share my new findings that aren't well highlighted on the web. I'll be very happy knowing if someone would solve his problem by reading one of my posts.
+I believe that documenting and sharing new knowledge helps to understand deeper the things you've researched. So I'm trying to share my new findings that aren't well highlighted on the web. I'll be very happy knowing if someone would solve his problem by reading one of my posts.
 
 🙌 This blog is inspired by [Kalle Hallden's](https://www.youtube.com/channel/UCWr0mx597DnSGLFk1WfvSkQ/channels), [Tania Rascia's](https://www.taniarascia.com/)  and [Flavio Copes's](https://flaviocopes.com/) works.
 
