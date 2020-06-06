@@ -152,7 +152,7 @@ Let's write our API call with promises:
 // > Object {userId: 1, id: 1, title: "delectus aut autem", completed: false}
 ```
 
-When the `fetch` method has received a response with HTTP-headers, the **1st promise** resolves and returns a `Response` object. In order to get the body with data you need to call `response.json` method. It will either return a promise (the **2nd**) which resolves when the data is fully loaded. The **second promise ** returns fetched data in JSON. That's why you need to use two `.then` calls.
+When the `fetch` method has received a response with HTTP-headers, the **1st promise** resolves and returns a `Response` object. In order to get the body with data you need to call `response.json` method. It will either return a promise (the **2nd**) which resolves when the data is fully loaded. The **2nd promise** returns fetched data in JSON. That's why you need to use two `.then` calls.
 
 ## `Async/await`
 
