@@ -39,14 +39,14 @@ This autumn I've decided to commit to the ["Learn in public"](https://www.swyx.i
 ### JavaScript
 
 - ~~Basic JavaScript~~
-- Advanced JavaScript
+- ~~Advanced JavaScript~~
 - ~~React~~
 - Redux
 - ~~MaterialUI~~
 - Advanced React
 - Node.js crash course
 - ~~async/await promises js, browser eventloop~~
-- js events, function call apply
+- ~~js events, function call apply~~
 - ecma6
 - Node js + next js
 
