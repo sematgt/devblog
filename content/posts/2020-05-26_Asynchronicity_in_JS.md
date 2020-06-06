@@ -116,11 +116,17 @@ promise.then( // promise - Promise object instance
 
 ```js
 promise.catch(
-  reason => console.error(reason);    
+  reason => console.error(reason);
 )
 ```
 
-Notice that this code is equal to `promise.then(null, reason => console.error(reason))`. `catch` let you write handler call shorter.
+Notice that this code is equal to:
+
+```js
+promise.then(null, reason => console.error(reason))
+```
+
+`catch` just let you write handler call shorter.
 
 - `finally` - handler that will run in any case:
 
