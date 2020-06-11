@@ -76,7 +76,7 @@ export default function SEO(props) {
       // HowTo type
       if (postType === 'HowTo') {
         let steps = []
-        postNode.frontmatter.steps.forEach(step => steps.push({'@type': 'HowToStep', 'text': step.text}))
+        postNode.frontmatter.steps.forEach(step => steps.push({'@type': 'HowToStep', 'text': step.text, 'name': step.text,}))
         schemaOrgJSONLD.push(
           {
             '@context': 'http://schema.org',
