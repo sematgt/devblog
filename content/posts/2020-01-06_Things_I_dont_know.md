@@ -36,6 +36,10 @@ This autumn I've decided to commit to the ["Learn in public"](https://www.swyx.i
 
 ## To-do plan
 
+### CS
+
+- Design patterns and SOLID principles
+
 ### JavaScript
 
 - ~~Basic JavaScript~~
