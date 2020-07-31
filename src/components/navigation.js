@@ -6,7 +6,7 @@ export default (props) => (
     <div className="menu"> 
         <div className="hiwords">
             <div className="text-wrapper">
-                <b>Hello, I`m Simon,</b><br/>full-stack software engineer <span role="img" aria-label="wip">⛏️</span>, working on <a href={config.github} target="_blank" rel="noopener noreferrer"><span className="screen-reader-text">Link to my github page</span>open-source</a> and writing about my vision to web-development.<span role="img" aria-label="paper">🧾</span>
+                <b>Hello, I`m Simon,</b><br/> a full-stack software engineer <span role="img" aria-label="wip">⛏️</span>, working on <a href={config.github} target="_blank" rel="noopener noreferrer"><span className="screen-reader-text">Link to my github page</span>open-source</a> and writing about my vision to web-development.<span role="img" aria-label="paper">🧾</span>
             </div>
         </div>
         <div className="navigation">
