@@ -12,7 +12,7 @@ const config = {
     siteDescription:
       'Hello I`m Simon, full-stack software engineer, working on open-source and writing about web-development.',
     userName: 'Simon',
-    userEmail: 'hello@simonbliznyuk.com',
+    userEmail: 'cooperatewithsimon@gmail.com',
     userTwitter: 'simonbliznyuk',
     menuLinks: [
       {
