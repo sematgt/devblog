@@ -1,6 +1,6 @@
 # 💻 YAODB
 
-Personal JAMStack web blog. Blog-theme for Gatsby based on my personal webpage.
+Personal JAMStack mobile-friendly web blog on Gatsby, GraphQL and SASS
 
 Built on: *Gatsby, React, GraphQL, Sass*
 
