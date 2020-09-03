@@ -12,9 +12,9 @@ postType: "Article"
 
 One of the obvious advantages of React Router (v4 and higher) comparing to other web-app frameworks routers is the freedom of implementation. React Router developers call it ["Dynamic Routing"](https://reacttraining.com/react-router/web/guides/philosophy). Since React Router is basically a bunch of React components, we can initialize and configure them anywhere in our app.
 
-When you start up your project with `create-react-app`, it can be very handy to put router in your `index.js` file to avoid spawning unneccessary wrapping components in your root component.
+If you are starting your project with `create-react-app`, it can be very handy to put the router in your `index.js` file to avoid spawning unneccessary wrapping components in your root component.
 
-We simply adding function component straight into `index.js` and that's it:
+We're simply adding function component straight into `index.js` and that's it:
 
 ```jsx
 import { BrowserRouter as Router, Route } from 'react-router-dom';
