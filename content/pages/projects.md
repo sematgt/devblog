@@ -24,6 +24,14 @@ Built on: *Gatsby, React, GraphQL, Sass*
 
 [Demo](https://www.simonbliznyuk.com) [Source](https://github.com/semaphore8/devblog)
 
+## 🗃️ Leitner.js
+
+JavaScript flashcards study system based on spaced-repetition method and Leitner learning system.
+
+![demo](../images/pages/projects/Leitner-demo.gif)
+
+WIP
+
 ## 🎨 Mokaidia
 
 PrismJS theme based on "okaidia"
