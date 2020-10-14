@@ -14,7 +14,7 @@ Since then I had received a Master's Degree in CS and managed to work in various
 
 📚 I've always been a big fan of [learning](https://www.simonbliznyuk.com/things-i-dont-know) new technologies and discovering how things work.
 
-Now besides my full-time job as a DevOps & QA engineer, I learn full-stack web development and write an [open-source](https://github.com/semaphore8) code in my spare time.
+Now besides my full-time job as a DevOps & QA engineer, I learn full-stack web development and write an [open-source](https://github.com/sematgt) code in my spare time.
 
 I believe that documenting and sharing new knowledge helps to understand deeper the things you've researched. So I'm trying to share my new findings that aren't well highlighted on the web. I'll be very happy knowing if someone would solve his problem by reading one of my posts.
 

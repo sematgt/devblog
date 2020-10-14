@@ -5,7 +5,7 @@ const config = {
     siteUrl: 'https://www.simonbliznyuk.com/',
     siteLogo: '/content/thumbnails/icon.png',
     repo: 'https://github.com/sbliznyuk/devblog',
-    github: 'https://github.com/semaphore8',
+    github: 'https://github.com/sematgt',
     pathPrefix: '',
     dateFromFormat: 'YYYY-MM-DD',
     dateFormat: 'MMMM Do, YYYY',

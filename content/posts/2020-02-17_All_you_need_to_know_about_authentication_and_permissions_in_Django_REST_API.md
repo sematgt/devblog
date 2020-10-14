@@ -62,7 +62,7 @@ Permissions in Django REST Framework may be set in 3 different ways:
 2. Into the views or viewsets
 3. On an object level 
 
-Now let's take a look at each of these methods. In this article, I'll use this [Django REST Framework starter](https://github.com/semaphore8/Django-REST-Framework-API-starter.git). You can clone it to your local machine and pass-through this tutorial with me.
+Now let's take a look at each of these methods. In this article, I'll use this [Django REST Framework starter](https://github.com/sematgt/Django-REST-Framework-API-starter.git). You can clone it to your local machine and pass-through this tutorial with me.
 
 ### Setting permissions globally
 
@@ -208,11 +208,11 @@ If you are using Django it won't be such a big problem as Django provides pretty
 
 We`ve learned:
 
-- What are permissions in Django REST Framework 
+- What are permissions in Django REST Framework
 - What built-in permissions classes DRF has
 - How to write custom permission classes
 - How to set permissions globally, per-view and on object level
 
-You can get the resulted source code of this tutorial on my [github page](https://github.com/semaphore8/Tutorials/tree/master/Django-REST-API-authentication-and-permissions/complete). 
+You can get the resulted source code of this tutorial on my [github page](https://github.com/sematgt/Tutorials/tree/master/Django-REST-API-authentication-and-permissions/complete). 
 
 *P.S.* There are also several [third party packages](https://www.django-rest-framework.org/api-guide/permissions/#third-party-packages) providing permissions control for Django REST Framework in case you want to build more complex access rules to your project.

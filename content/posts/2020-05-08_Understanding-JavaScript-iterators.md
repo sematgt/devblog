@@ -171,4 +171,4 @@ for (let value of group) console.log(value);
 // 🌮
 ```
 
-You can find finish code in my [github gists](https://gist.github.com/semaphore8/8bea92d9ac29384555990c569005670b).
+You can find finish code in my [github gists](https://gist.github.com/sematgt/8bea92d9ac29384555990c569005670b).

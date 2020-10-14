@@ -8,7 +8,7 @@ template: "page"
 
 📮 Email: [cooperatewithsimon@gmail.com](mailto:cooperatewithsimon@gmail.com)
 
-⌨️ GitHub: [semaphore8](https://github.com/semaphore8)
+⌨️ GitHub: [sematgt](https://github.com/sematgt)
 
 ✍ Twitter: [simonbliznyuk](https://twitter.com/simonbliznyuk)
 

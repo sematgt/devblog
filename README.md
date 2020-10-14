@@ -10,4 +10,4 @@ Built on: *Gatsby, React, GraphQL, Sass*
 
 ## License
 
-[MIT](https://github.com/semaphore8/devblog/blob/master/LICENSE)
+[MIT](https://github.com/sematgt/devblog/blob/master/LICENSE)

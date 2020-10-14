@@ -12,9 +12,9 @@ Class schedule MVC single-page web-application with admin interface
 
 Built on: *Django, Django REST Framework, React, JavaScript, MaterialUI*
 
-[Demo](https://semaphore8.github.io/) * *give it some time to wake up backend servers on the first visit. frontend admin creds* **guest**:**asdf^jkl;**
+[Demo](https://sematgt.github.io/) * *give it some time to wake up backend servers on the first visit. frontend admin creds* **guest**:**asdf^jkl;**
 
-[Source](https://github.com/semaphore8/schedule_nngu)
+[Source](https://github.com/sematgt/schedule_nngu)
 
 ## 💻 My dev blog
 
@@ -22,7 +22,7 @@ Blog-theme for Gatsby based on my personal page, Jamstack app
 
 Built on: *Gatsby, React, GraphQL, Sass*
 
-[Demo](https://www.simonbliznyuk.com) [Source](https://github.com/semaphore8/devblog)
+[Demo](https://www.simonbliznyuk.com) [Source](https://github.com/sematgt/devblog)
 
 ## 🗃️ Leitner.js
 
@@ -40,4 +40,4 @@ PrismJS theme based on "okaidia"
 
 Built on: *CSS*
 
-[Demo & Source](https://github.com/semaphore8/mokaidia)
+[Demo & Source](https://github.com/sematgt/mokaidia)
