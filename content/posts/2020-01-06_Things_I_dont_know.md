@@ -1,6 +1,7 @@
 ---
 path: "/things-i-dont-know"
 date: 2020-01-06
+edited: 2020-11-30
 title: "Things I don't know"
 subtitle: "As a software engineer"
 tags: "Blog"
@@ -36,9 +37,23 @@ This autumn I've decided to commit to the ["Learn in public"](https://www.swyx.i
 
 ## To-do plan
 
-### CS
+### Books
 
-- Design patterns and SOLID principles
+- "Introduction to Algorithms" by Cormen, Leiserson, Rivest, and Stein
+- "Cracking the coding interview" by McDowell Gayle Laakmann
+- ~~"Learning Python" by Mark Lutz~~
+- ~~"Grokking Algorithms" by Aditya Y. Bhargava~~
+- "Design Patterns: Elements of Reusable Object-Oriented Software" by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
+- ~~"Eloquent JavaScript" by Marijn Haverbeke~~
+- "Competitive Programming" by Antti Laaksonen
+- "Refactoring: Improving the Design of Existing Code" by Martin Fowler
+- "Code complete" by Steve McConnell
+- "Clean code" by Robert C. Martin
+
+### Courses
+
+- ~~"Algorithms and data structures on Python" by MIPT~~
+- "Algorithms and data structures" by MIT
 
 ### JavaScript
 
@@ -47,16 +62,16 @@ This autumn I've decided to commit to the ["Learn in public"](https://www.swyx.i
 - ~~React~~
 - Redux
 - ~~MaterialUI~~
-- Advanced React
+- ~~Advanced React~~
 - Node.js crash course
 - ~~async/await promises js, browser eventloop~~
 - ~~js events, function call apply~~
-- ecma6
+- ~~es6~~
 - Node js + next js
+- ~~regex~~
 
 ### Python
 
-- ~~"Learning Python" Mark Lutz~~
 - "Programming Python" Mark Lutz
 - ~~Django~~
 - ~~Django REST Framework~~
@@ -77,7 +92,7 @@ This autumn I've decided to commit to the ["Learn in public"](https://www.swyx.i
 
 - MongoDB
 - ~~PostgreSQL~~
-- Firebase
+- ~~Firebase~~
 - ~~GraphQL~~
 
 ### UI/UX Design
@@ -127,10 +142,8 @@ This autumn I've decided to commit to the ["Learn in public"](https://www.swyx.i
 ### OS, CLI
 
 - ~~Bash~~
-- ~~cmd.exe~~
 - ~~PowerShell 101~~
 - ~~Linux core knowledge~~
-- ~~regex~~
 
 ### CSS
 
