@@ -16,7 +16,7 @@ Since then I had received a Master's Degree in CS and managed to work in various
 
 Now besides my full-time job as a DevOps & QA engineer, I learn full-stack web development and write an [open-source](https://github.com/sematgt) code in my spare time.
 
-I believe that documenting and sharing new knowledge helps to understand deeper the things you've researched. So I'm trying to share my new findings that aren't well highlighted on the web. I'll be very happy knowing if someone would solve his problem by reading one of my posts.
+I believe that documenting and sharing new knowledge helps to understand deeper the things you've researched. So I try to share my new findings that aren't well highlighted on the web. I'll be very happy knowing if someone would solve his problem by reading one of my posts.
 
 🙌 This blog is inspired by [Kalle Hallden's](https://www.youtube.com/channel/UCWr0mx597DnSGLFk1WfvSkQ/channels), [Tania Rascia's](https://www.taniarascia.com/)  and [Flavio Copes's](https://flaviocopes.com/) works.
 
@@ -25,7 +25,7 @@ I believe that documenting and sharing new knowledge helps to understand deeper 
 My current setup is pretty simple:
 
 - Lenovo T520 laptop
-- Samsung SA650 monitor
+- DELL UltraSharp U2719DC 27" monitor
 - Ikea desk
 - Some random mouse and keyboard
 - VSCode
