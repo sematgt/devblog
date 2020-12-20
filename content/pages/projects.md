@@ -18,7 +18,7 @@ Built on: *Django, Django REST Framework, React, JavaScript, MaterialUI*
 
 ## 💻 My dev blog
 
-Blog-theme for Gatsby based on my personal page, Jamstack app
+My personal blog built on Gatsby; Jamstack app
 
 Built on: *Gatsby, React, GraphQL, Sass*
 
@@ -26,11 +26,11 @@ Built on: *Gatsby, React, GraphQL, Sass*
 
 ## 🗃️ Leitner.js
 
-JavaScript flashcards study system based on spaced-repetition method and Leitner learning system.
+JavaScript flashcards study app based on spaced-repetition method and Leitner learning system.
 
 ![demo](../images/pages/projects/Leitner-demo.gif)
 
-WIP
+Status: in progress
 
 ## 🎨 Mokaidia
 
