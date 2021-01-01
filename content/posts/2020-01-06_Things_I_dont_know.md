@@ -64,7 +64,7 @@ This autumn I've decided to commit to the ["Learn in public"](https://www.swyx.i
 - Redux
 - ~~MaterialUI~~
 - ~~Advanced React~~
-- Node.js crash course
+- ~~Node.js crash course~~
 - ~~async/await promises js, browser eventloop~~
 - ~~js events, function call apply~~
 - ~~es6~~
@@ -135,7 +135,7 @@ This autumn I've decided to commit to the ["Learn in public"](https://www.swyx.i
 ### Versioning
 
 - ~~Git 101~~
-- ~~Advanced Git~~
+- Advanced Git
 - ~~Mercurial~~
 - ~~SVN~~
 - ~~Big files in repos~~
