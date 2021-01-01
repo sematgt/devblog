@@ -39,16 +39,17 @@ This autumn I've decided to commit to the ["Learn in public"](https://www.swyx.i
 
 ### Books
 
-- "Introduction to Algorithms" by Cormen, Leiserson, Rivest, and Stein
-- "Cracking the coding interview" by McDowell Gayle Laakmann
-- ~~"Learning Python" by Mark Lutz~~
-- ~~"Grokking Algorithms" by Aditya Y. Bhargava~~
-- "Design Patterns: Elements of Reusable Object-Oriented Software" by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
-- ~~"Eloquent JavaScript" by Marijn Haverbeke~~
-- "Competitive Programming" by Antti Laaksonen
-- "Refactoring: Improving the Design of Existing Code" by Martin Fowler
-- "Code complete" by Steve McConnell
-- "Clean code" by Robert C. Martin
+- "Introduction to Algorithms" by *Cormen, Leiserson, Rivest, and Stein*
+- "Cracking the coding interview" by *McDowell Gayle Laakmann*
+- ~~"Learning Python" by *Mark Lutz*~~
+- ~~"Grokking Algorithms" by *Aditya Y. Bhargava*~~
+- "Design Patterns: Elements of Reusable Object-Oriented Software" by *Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides*
+- ~~"Eloquent JavaScript" by *Marijn Haverbeke*~~
+- "Competitive Programming" by *Antti Laaksonen*
+- "Refactoring: Improving the Design of Existing Code" by *Martin Fowler*
+- "Code complete" by *Steve McConnell*
+- "Clean code" by *Robert C. Martin*
+- CSS: The Missing Manual 4th Edition by *David Sawyer McFarland*
 
 ### Courses
 
