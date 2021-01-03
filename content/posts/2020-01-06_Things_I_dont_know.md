@@ -49,7 +49,7 @@ This autumn I've decided to commit to the ["Learn in public"](https://www.swyx.i
 - "Refactoring: Improving the Design of Existing Code" by *Martin Fowler*
 - "Code complete" by *Steve McConnell*
 - "Clean code" by *Robert C. Martin*
-- CSS: The Missing Manual 4th Edition by *David Sawyer McFarland*
+- ~~CSS: The Missing Manual 4th Edition by *David Sawyer McFarland*~~
 
 ### Courses
 
