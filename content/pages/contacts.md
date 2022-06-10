@@ -6,7 +6,7 @@ template: "page"
 
 ## Say hello
 
-📮 Email: [cooperatewithsimon@gmail.com](mailto:cooperatewithsimon@gmail.com)
+📮 Email: [sgbliznyuk@ya.ru](mailto:sgbliznyuk@ya.ru)
 
 ⌨️ GitHub: [sematgt](https://github.com/sematgt)
 
