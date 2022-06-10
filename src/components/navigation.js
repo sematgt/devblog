@@ -6,7 +6,7 @@ export default (props) => (
     <div className="menu"> 
         <div className="hiwords">
             <div className="text-wrapper">
-                <b>Hello, I`m Simon,</b><br/> a Software Engineer 🧾
+                <b>👋 Hello, I`m Simon,</b>
             </div>
         </div>
         <div className="navigation">
