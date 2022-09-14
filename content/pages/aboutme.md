@@ -28,9 +28,3 @@ My current setup is pretty simple:
 - Apple Magic Keyboard
 - Some random mouse
 - VSCode
-
-## Soundcloud
-
-> We are what we listen to, who we listen to and who we listen with. Nico Jaar
-
-🎷 Music is also my big passion and a huge part of my life. It helps me to go through the long coding sessions. [Here is the place](https://soundcloud.com/steamysunnyspace) where I try to give some structure to my latest findings.
